@@ -64,7 +64,7 @@ body {
 .fixed-top {
     position: fixed;
     z-index: 999;
-    top: 51px;
+    top: 52px;
     background: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .18);
     height: 52px;
