@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-top {
-    padding: 5px 8px;
+    padding: 4px 8px;
 }
 .navbar-brand {
     padding-top: 0;
@@ -56,13 +56,13 @@ body {
 
 .nav-link {
     padding: 0.24rem 1rem 0.4rem 1rem;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .fixed-top {
     position: fixed;
     z-index: 999;
-    top: 46px;
+    top: 44px;
     background: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .18);
 }
@@ -81,7 +81,7 @@ body {
 
 /* card */
 .margin-top-cards {
-    margin-top: 46px;
+    margin-top: 44px;
 }
 
 .details {
@@ -132,10 +132,10 @@ body {
 }
 
 .card-description {
-    font-size: 13px;
+    font-size: 12px;
     color: #909090;
     text-align: left;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.3rem;
     line-height: 1.1;
 }
 
@@ -157,18 +157,18 @@ body {
 
 .card-price {
     margin-block-end: 0;
-    font-size: 17px;
+    font-size: 14px;
     color: #0E61C3;
     font-weight: 500;
 }
 
 .icon-blue {
-    font-size: 22px;
+    font-size: 18px;
     color: #0E61C3;
 }
 
 .icon-grey {
-    font-size: 22px;
+    font-size: 18px;
     color: #909090;
 }
 
@@ -176,7 +176,11 @@ body {
     font-size: 20px;
     color: #fff;
 }
-
+.num-food{
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+}
 .svg-inline--fa {
     vertical-align: -0.2em;
 }
@@ -269,84 +273,3 @@ body {
     font-size: 30px;
 }
 
-.fab-container:hover {
-    height: 100%;
-}
-
-.fab-container:hover .sub-button:nth-child(2) {
-    transform: translateY(-80px);
-}
-
-.fab-container:hover .sub-button:nth-child(3) {
-    transform: translateY(-140px);
-}
-
-.fab-container:hover .sub-button:nth-child(4) {
-    transform: translateY(-200px);
-}
-
-.fab-container:hover .sub-button:nth-child(5) {
-    transform: translateY(-260px);
-}
-
-.fab-container:hover .sub-button:nth-child(6) {
-    transform: translateY(-320px);
-}
-
-.fab-container .fab {
-    position: relative;
-    height: 70px;
-    width: 70px;
-    background-color: #4ba2ff;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-.fab-container .fab::before {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 35px;
-    width: 35px;
-    background-color: inherit;
-    border-radius: 0 0 10px 0;
-    z-index: -1;
-}
-
-.fab-container .fab .fab-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-.fab-container .fab .fab-content .material-icons {
-    color: white;
-    font-size: 48px;
-}
-
-.fab-container .sub-button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 10px;
-    right: 10px;
-    height: 50px;
-    width: 50px;
-    background-color: #4ba2ff;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.fab-container .sub-button:hover {
-    cursor: pointer;
-}
-
-.fab-container .sub-button .material-icons {
-    color: white;
-    padding-top: 6px;
-}
