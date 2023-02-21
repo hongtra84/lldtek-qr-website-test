@@ -3,7 +3,9 @@ body {
     min-height: 75rem;
     background-color: #fff;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 .btn {
     border: none;
 }
@@ -225,14 +227,14 @@ body {
 }
 
 .btn-add-to-order {
-    padding: 1px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    background-image: linear-gradient(#AF7515, #E0C98B, #F7E196, #AF7515);
-    
+    background-color: #fff;
+    border-radius: 50px;
     color: #fff;
     font-weight: 500;
     font-size: 18px;
-    border-radius: 50px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
+    padding: 1px 1px 2px 1px;
 }
 .btn-add-to-order .bg-inner {
     background-image: linear-gradient(#0061C1, #001F4C);
