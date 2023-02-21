@@ -1,0 +1,164 @@
+
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    background-color: #fff;
+  }
+
+
+/* navbar */
+.navbar-top{
+    height: 52px !important;
+    padding: 0 15px;
+}
+.navbar-brand{
+    padding-top: 0;
+}
+.bg-blue{
+    background-image: linear-gradient(to bottom, #001F4C , #0061C1);
+}
+.bg-blue a{
+    color: #fff;
+}
+.title-bar{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 0;
+}
+.nav-pills .nav-link{
+    color: #333;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0E61C3;
+    border-radius: 50px;
+    font-size: 17px;
+}
+.nav-link {
+    padding: 0.24rem 1rem 0.4rem 1rem;
+    font-size: 17px;
+}
+.fixed-top{
+    position: fixed;
+    z-index: 999;
+    top: 51px;
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .18); 
+    height: 52px;
+}
+
+
+/* card */
+.margin-top-cards{
+    margin-top: 52px;
+}
+.details {
+    border: 1.5px solid grey;
+    color: #212121;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #212121;
+}
+
+.cart {
+    background-color: #212121;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    height: 39px;
+    padding-top: 9px;
+    box-shadow: 0px 5px 10px  #212121;
+}
+
+.card {
+    width: fit-content;
+}
+
+
+.img-thumbnail {
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-left-radius: 0 0;
+    border-bottom-right-radius: 0 0;
+    padding: 0;
+    border: none;
+}
+
+.card {
+    /* box-shadow: 0 20px 40px rgba(0, 0, 0, .2); */
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+.card-title{
+    text-align: left;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+.card-description{
+    font-size: 13px;
+    color: #909090;
+    text-align: left;
+    margin-bottom: 0.6rem;
+    line-height: 1.1;
+}
+.btn-sub{
+    border-radius: 50%;
+    background-color: #212121;
+    width: 20px;
+    height: 20px;
+}
+.card-body{
+    padding: 5px 10px 10px 10px;
+}
+.card-price{
+    margin-block-end: 0;
+    font-size: 17px;
+    color: #0E61C3;   
+}
+.icon-blue{
+    font-size: 22px;
+    color: #0E61C3;
+}
+.icon-grey{
+    font-size: 22px;
+    color: #909090;
+}
+.icon-white{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* bottom */
+.padding-bottom-bar{
+    padding: 0 0 15px 0;
+}
+.total{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.btn-add-to-order{
+    background-image: linear-gradient(to top, #001F4C , #0061C1);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-my-order{
+    background-color: #fff;
+    border-radius: 50px;
+    color: #0E61C3;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    border-image: linear-gradient(#AF7515, #E0C98B, #F7E196, #AF7515) 30;
+}
+.my-order{
+    font-size: 13px;
+}
+.icon-cart{
+    font-size: 13px;
+}
