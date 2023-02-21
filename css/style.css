@@ -8,6 +8,7 @@ body {
 }
 .btn {
     border: none;
+    padding: 0.375rem 1rem;
 }
 
 .btn:focus {
@@ -135,7 +136,7 @@ body {
     font-size: 12px;
     color: #909090;
     text-align: left;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0;
     line-height: 1.1;
 }
 
@@ -147,7 +148,7 @@ body {
 }
 
 .card-body {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 0 5px 10px;
     background: #fff;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -243,7 +244,7 @@ body {
     border-radius: 50px;
 }
 .btn-add-to-order .bg-inner .content-btn{
-    padding: 9px 1px 9px 1px;   /* change padding fit content */
+    padding: 7px 1px 11px 1px;   /* change padding fit content */
     background-image: linear-gradient(#0061C1, #001F4C);
     border-radius: 50px;
 }
