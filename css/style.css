@@ -122,7 +122,7 @@ body {
 .card {
     /* box-shadow: 0 20px 40px rgba(0, 0, 0, .2); */
     border-radius: 10px;
-    border: 1px solid orange;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
 }
 
 .card-title {
@@ -149,6 +149,11 @@ body {
 
 .card-body {
     padding: 5px 10px 5px 10px;
+    background: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
 }
 
 .card-price {
@@ -188,26 +193,6 @@ body {
     margin-bottom: 0;
 }
 
-.btn-add-to-order {
-    /* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255))); */
-    /* background-image: -webkit-gradient(linear, top bottom, color-stop(1, #AF7515), color-stop(1, #E0C98B)); */
-    /* background-image: -moz-linear-gradient(top bottom, #AF7515, #E0C98B, #F7E196, #AF7515 ); */
-    
-    padding: 1px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    background-image: linear-gradient(#AF7515, #E0C98B, #F7E196, #AF7515);
-    
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 50px;
-}
-
-.btn-add-to-order .bg-inner {
-    background-image: linear-gradient(#0061C1, #001F4C);
-    border-radius: 50px;
-    padding: 12px 0 16px 0;
-}
 
 .btn-my-order {
     background-color: #fff;
@@ -215,15 +200,20 @@ body {
     color: #0E61C3;
     font-weight: 500;
     font-size: 18px;
-    padding: 1px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    background-image: linear-gradient(#AF7515, #E0C98B, #F7E196, #AF7515);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
+    padding: 1px 1px 2px 1px;
 }
 
 .btn-my-order .bg-inner {
     background: #fff;
     border-radius: 50px;
-    padding: 5px 0;
+    padding: 0 0 0 0;
+}
+.btn-my-order .bg-inner .content-btn{
+    padding: 4px 1px 4px 1px;
+    background: #fff;
+    border-radius: 50px;
 }
 
 .my-order {
@@ -233,6 +223,26 @@ body {
 .icon-cart {
     font-size: 12px;
 }
+
+.btn-add-to-order {
+    padding: 1px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    background-image: linear-gradient(#AF7515, #E0C98B, #F7E196, #AF7515);
+    
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 50px;
+}
+.btn-add-to-order .bg-inner {
+    background-image: linear-gradient(#0061C1, #001F4C);
+    border-radius: 50px;
+    
+}
+.btn-add-to-order .bg-inner {
+    padding: 12px 0 16px 0;
+}
+
 
 /* Floating button  */
 .floating-button {
