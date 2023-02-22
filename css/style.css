@@ -3,13 +3,16 @@ body {
     min-height: 75rem;
     background-color: #fff;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
+
 .btn {
     border: none;
     padding: 0 1rem;
 }
+
 .btn.dropdown-toggle {
     padding: 5px 1rem;
 }
@@ -28,6 +31,7 @@ body {
 .navbar-top {
     padding: 4px 8px;
 }
+
 .navbar-brand {
     padding-top: 0;
 }
@@ -144,6 +148,16 @@ body {
     margin-bottom: 0;
     line-height: 1.1;
     padding-right: 10px;
+
+    /* truncate */
+    width: 132px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin: 0;
+    background: white;
+    /* resize: horizontal; */
 }
 
 .btn-sub {
@@ -183,11 +197,13 @@ body {
     font-size: 20px;
     color: #fff;
 }
-.num-food{
+
+.num-food {
     display: inline-block;
     margin-bottom: 0;
     font-size: 14px;
 }
+
 .svg-inline--fa {
     vertical-align: -0.2em;
 }
@@ -215,7 +231,8 @@ body {
     font-size: 18px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
-    padding: 1px 1px 2px 1px;   /* change border here */
+    padding: 1px 1px 2px 1px;
+    /* change border here */
 }
 
 .btn-my-order .bg-inner {
@@ -223,18 +240,23 @@ body {
     border-radius: 50px;
     padding: 0 0 0 0;
 }
-.btn-my-order .bg-inner .content-btn{
-    padding: 7px 1px 7px 1px;     /* change padding fit content */
+
+.btn-my-order .bg-inner .content-btn {
+    padding: 7px 1px 7px 1px;
+    /* change padding fit content */
     background: #fff;
     border-radius: 50px;
 }
+
 .my-order {
     font-size: 12px;
     line-height: 1;
 }
+
 .icon-cart {
     font-size: 12px;
 }
+
 .btn-add-to-order {
     background-color: #fff;
     border-radius: 50px;
@@ -243,18 +265,24 @@ body {
     font-size: 18px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
-    padding: 1px 1px 2px 1px;   /* change border here */
+    padding: 1px 1px 2px 1px;
+    /* change border here */
 }
+
 .btn-add-to-order .bg-inner {
     background-image: linear-gradient(#0061C1, #001F4C);
     border-radius: 50px;
 }
-.btn-add-to-order .bg-inner .content-btn{
-    padding: 7px 1px 13px 1px;   /* change padding fit content */
+
+.btn-add-to-order .bg-inner .content-btn {
+    padding: 7px 1px 13px 1px;
+    /* change padding fit content */
     background-image: linear-gradient(#0061C1, #001F4C);
     border-radius: 50px;
 }
-.btn-add-to-order:hover .bg-inner .content-btn, .btn-add-to-order:focus .bg-inner .content-btn {
+
+.btn-add-to-order:hover .bg-inner .content-btn,
+.btn-add-to-order:focus .bg-inner .content-btn {
     background-image: linear-gradient(#001F4C, #0061C1);
     border-radius: 50px;
     color: #fff;
@@ -284,12 +312,15 @@ body {
     color: #fff;
     font-size: 25px;
 }
-#minusPlus{
+
+#minusPlus {
     display: none;
 }
-.padding-top{
-    padding-top: 0.15rem!important;
+
+.padding-top {
+    padding-top: 0.15rem !important;
 }
-.btn.disabled.opacity-0{
+
+.btn.disabled.opacity-0 {
     opacity: 0;
 }
