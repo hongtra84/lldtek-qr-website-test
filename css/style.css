@@ -150,7 +150,7 @@ body {
     padding-right: 10px;
 
     /* truncate */
-    width: 132px;
+    width: 146px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
