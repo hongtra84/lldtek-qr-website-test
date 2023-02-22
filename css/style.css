@@ -238,7 +238,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
     padding: 1px 1px 2px 1px;   /* change border here */
 }
 .btn-add-to-order .bg-inner {
