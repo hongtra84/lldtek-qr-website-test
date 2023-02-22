@@ -23,7 +23,7 @@
 	<!-- navbar fix top-->
 	<nav class="navbar sticky-top navbar-top bg-blue">
 		<div class="d-flex justify-content-between align-self-center w-100">
-			<button class="btn" type="button">
+			<button class="btn disabled opacity-0" type="button">
 				<i class="fa-solid fa-arrow-left-long icon-white"></i>
 			</button>
 
@@ -87,7 +87,7 @@
 										<p class="card-price align-self-center">$299</p>
 										<div class="align-self-center">
 											<button id="btnAddDish" class="btn" type="button">
-												<i class="fa-solid fa-cart-shopping icon-blue"></i>
+												<i class="fas fa-plus-circle icon-blue"></i>
 											</button>
 											<div id="minusPlus">
 												<div class="d-flex align-items-center">
@@ -335,7 +335,7 @@
 		<!-- Float button -->
 	<div class="floating-button">
 		<button type="button" class="btn btn-floating flex-fill m-2">
-			<i class="fa-solid fa-bell-concierge icon-white mr-1 align-self-center"></i>
+			<i class="fa-solid fa-phone-flip icon-white-big mr-1 align-self-center"></i>
 			<!-- <i class="fa-solid fa-bowl-food"></i> -->
 		</button>
 	  </div>
@@ -357,7 +357,7 @@
 	<script>
 		$("#btnAddDish").click(function () {
 			$(this).addClass("d-none");
-			$("#minusPlus").addClass("d-block");
+			$("#minusPlus").addClass("d-block padding-top");
 		});
 
 	</script>
