@@ -7,19 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 
-    <link href="./css/font-awesome.css" type="text/css">
+	<link href="./css/font-awesome.css" type="text/css">
 
-
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- css for cart -->
-    <link rel="stylesheet" href="./css/cart.css">
+	<link rel="stylesheet" href="./css/style.css">
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
 
     <title>QR Website</title>
@@ -68,21 +63,19 @@
                                 <p class="card-price align-self-center">$299</p>
                                 <div class="align-self-center">
                                     <div id="minusPlus">
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn" type="button">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <button class="btn minus minus-plus" type="button">
                                                 <i class="fas fa-minus-circle icon-grey"></i>
                                             </button>
-                                            <p class="num-food">4</p>
-                                            <button class="btn" type="button">
+                                            <input type="text" class="form-control quantity" id="adults" size="10" value="0">
+                                            <button class="btn plus minus-plus" type="button">
                                                 <i class="fas fa-plus-circle icon-blue"></i>
                                             </button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -103,11 +96,11 @@
                                 <div class="align-self-center">
                                     <div id="minusPlus">
                                         <div class="d-flex align-items-center">
-                                            <button class="btn" type="button">
+                                            <button class="btn minus minus-plus" type="button">
                                                 <i class="fas fa-minus-circle icon-grey"></i>
                                             </button>
                                             <p class="num-food">4</p>
-                                            <button class="btn" type="button">
+                                            <button class="btn plus minus-plus" type="button">
                                                 <i class="fas fa-plus-circle icon-blue"></i>
                                             </button>
                                         </div>
@@ -135,8 +128,8 @@
                                     <div class="swiper-slide">
                                         <div class="card-body text-center">
                                             <div class="card-related position-relative">
-                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto"
-                                                    height="auto" />
+                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg"
+                                                    width="auto" height="auto" />
                                                 <div class="add-to-order">
                                                     <a href="my-order.html">
                                                         <h6 class="card-title text-white">Hand-cut Ribeye</h6>
@@ -154,8 +147,8 @@
                                     <div class="swiper-slide">
                                         <div class="card-body text-center">
                                             <div class="card-related position-relative">
-                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto"
-                                                    height="auto" />
+                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg"
+                                                    width="auto" height="auto" />
                                                 <div class="add-to-order">
                                                     <a href="my-order.html">
                                                         <h6 class="card-title text-white">Hand-cut Ribeye</h6>
@@ -173,8 +166,8 @@
                                     <div class="swiper-slide">
                                         <div class="card-body text-center">
                                             <div class="card-related position-relative">
-                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto"
-                                                    height="auto" />
+                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg"
+                                                    width="auto" height="auto" />
                                                 <div class="add-to-order">
                                                     <a href="my-order.html">
                                                         <h6 class="card-title text-white">Hand-cut Ribeye</h6>
@@ -199,137 +192,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="container">
-        <div class="card">
-               <div class="form">
-                   <div class="left-side">
-                       <div class="fashion">
-                           <h3>Fashion</h3>
-                           <div class="input_text">
-                               <input type="text" placeholder="Search">
-                               <i class="fa fa-search"></i>
-                           </div>
-                       </div>
-                       <div class="woman">
-                           <h5>Woman</h5>
-                           <i class="fa fa-angle-right"></i>
-                           <p>Pastel Jacket with Bejewelled Collar</p>
-                       </div>
-                       <div class="images">
-                           <div class="img_girl_left">
-                               <i class="fa fa-angle-up"></i>
-                               <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
-                               <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
-                               <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
-                               <i class="fa fa-angle-down"></i>
-                           </div>
-                           <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
-                       </div>
-                       <div class="right_women_img m_top">
-                           <span><img src="https://imgur.com/k6xMg7h.jpg"></span>
-                           <span><img src="https://imgur.com/cEi4yel.jpg"></span>
-                       </div>
-                       
-       
-                       
-                   </div>
-                   <div class="right-side">
-                       <div class="top_div">
-                           <span>Woman</span>
-                           <span>Man</span>
-                           <span>Designers</span>
-                           <span>Wishlist</span>
-                           <span>Cart<i class="fa fa-shopping-bag"></i></span>
-                       </div>
-                       <div class="indexing">
-                           <span><i class="fa fa-angle-left"></i> Prev</span>
-                           <small>2 of 210</small>
-                           <span>Next <i class="fa fa-angle-right"></i></span>
-                       </div>
-                       <h3>Pastel Jacket With Bejewelled Collar</h3>
-                       <h4>79.99 GBP</h4>
-                       <div class="designer">
-                           <h5>Designer : </h5>
-                           <p>Mademoiselle Tambour</p>
-                       </div>
-                       <div class="logo">
-                               <p>melle</p>
-                               <h3>TAMBOUR</h3>
-                               <h5>Mademoiselle Tambour</h5>
-                       </div>
-                       <div class="designer">
-                           <h5>Color : </h5>
-                           <p>Tobacco Brown</p>
-                           
-                       </div>
-                       <div class="color">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                       </div>
-                       <div class="options">
-                           <div class="size">
-                               <select>
-                                   <option>Size : S</option>
-                                   <option>Size : M</option>
-                                   <option>Size : L</option>
-                                   <option>Size : XL</option>
-                               </select>
-                           </div>
-                           <div class="quantity">
-                               <i class="fa fa-minus"></i>
-                               <span class="qty">1</span>
-                               <i class="fa fa-plus"></i>
-                           </div>
-                           <button>Add to cart</button>
-                       </div>
-                       <div class="open_wish">
-                           <p>Open sizes guide</p>
-                           <div class="wishlist">
-                               <i class="fa fa-heart-o"></i>
-                               <p>Add to Wishlist</p>
-                           </div>
-                       </div>
-                       <div class="description">
-                           <h4>Description</h4>
-                           <p>Pastel Jacket with Bejewelled collar exclusive pattern by John Malkovich and printed on soft cotton fabric.Made in Italy. </p>
-                           <ul class="features">
-                               <li>Quilted Design</li>
-                               <li>Contrasted faux-fur collar </li>
-                               <li>Loops on the shoulder</li>
-                               <li>Side zip pockets</li>
-                               <li>Two side pockets with one press stud fasteneing</li>
-                               <li>Long sleeve with elastic cuff's</li>
-                               <li>Zip fasteneing on the front section</li>
-                           </ul>
-                           <p>Side length 31.5cm</p>
-                           <p1>Back length 56.5cm</p1>
-                       </div>
-                       <div class="share">
-                           <h4>Share</h4>
-                           <div class="social">
-                               <i class="fa fa-facebook"></i>
-                               <i class="fa fa-twitter"></i>
-                               <i class="fa fa-pinterest"></i>
-                               <i class="fa fa-google-plus"></i>
-                           </div>
-                           
-                       </div>
-                       <div class="right_women_img">
-                           <span><img src="https://imgur.com/huwj3NI.jpg.jpg"></span>
-                           <span><img src="https://imgur.com/cVUx7kR.jpg"></span>
-                       </div>
-       
-                   
-       
-                   </div>
-               </div>
-        </div>
-       </div> -->
-
-
-
 
 
     <!-- navbar fix bottom -->
@@ -363,19 +225,13 @@
     </nav>
 
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
+    <!-- Js -->
+	<script src="./js/jquery.slim.min.js"></script>
+	<script src="./js/bootstrap.bundle.js"></script>
 
-    <script src="./js/cart.js"></script>
-    <script src="./js/font-awesome.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./js/font-awesome.js"></script>
+	<script src="./js/cart.js"></script>
+	<script src="./js/swiper.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
