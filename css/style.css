@@ -279,4 +279,6 @@ body {
     color: #fff;
     font-size: 30px;
 }
-
+#minusPlus{
+    display: none;
+}
