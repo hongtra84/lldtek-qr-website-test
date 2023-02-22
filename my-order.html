@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="./css/font-awesome.css" type="text/css">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- css for cart -->
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+    <title>QR Website</title>
+</head>
+
+<body>
+    <!-- navbar fix top-->
+    <nav class="navbar sticky-top navbar-top bg-blue">
+        <div class="d-flex justify-content-between align-self-center w-100">
+            <button class="btn" type="button">
+                <i class="fa-solid fa-arrow-left-long icon-white"></i>
+            </button>
+
+            <a class="navbar-brand title-bar" href="#">My Order</a>
+            <div class="dropdown">
+
+                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-list-ul icon-white"></i>
+                </button>
+                <div class="dropdown-menu menu-right">
+                    <button class="dropdown-item" type="button">Waiter</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-orders">
+        <div class="row p-1">
+            <div class="wrap-card">
+                <div class="card bg-white m-2">
+                    <div class="row">
+                        <div class="col-5">
+                            <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
+                                height="auto" />
+                        </div>
+                        <div class="col-7">
+                            <h6 class="card-title">Hand-cut Ribeye</h6>
+                            <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between">
+                                <p class="card-price align-self-center">$299</p>
+                                <div class="align-self-center">
+                                    <div id="minusPlus">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn" type="button">
+                                                <i class="fas fa-minus-circle icon-grey"></i>
+                                            </button>
+                                            <p class="num-food">4</p>
+                                            <button class="btn" type="button">
+                                                <i class="fas fa-plus-circle icon-blue"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card bg-white m-2">
+                    <div class="row">
+                        <div class="col-5">
+                            <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto" height="auto" />
+                        </div>
+                        <div class="col-7">
+                            <h6 class="card-title">Hand-cut Ribeye</h6>
+                            <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between">
+                                <p class="card-price align-self-center">$299</p>
+                                <div class="align-self-center">
+                                    <div id="minusPlus">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn" type="button">
+                                                <i class="fas fa-minus-circle icon-grey"></i>
+                                            </button>
+                                            <p class="num-food">4</p>
+                                            <button class="btn" type="button">
+                                                <i class="fas fa-plus-circle icon-blue"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card bg-white m-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="card-title">Sẽ ngon hơn khi thưởng thức cùng</h1>
+                        </div>
+                    </div>
+
+                    <!-- Swiper -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card-body text-center">
+                                            <div class="card-related position-relative">
+                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto"
+                                                    height="auto" />
+                                                <div class="add-to-order">
+                                                    <a href="my-order.html">
+                                                        <h6 class="card-title text-white">Hand-cut Ribeye</h6>
+                                                    </a>
+                                                    <p class="card-price text-left text-white">$299</p>
+                                                </div>
+                                                <div class="button-right">
+                                                    <button class="btn" type="button btn-add-order">
+                                                        <i class="fas fa-plus-circle icon-add-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-body text-center">
+                                            <div class="card-related position-relative">
+                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto"
+                                                    height="auto" />
+                                                <div class="add-to-order">
+                                                    <a href="my-order.html">
+                                                        <h6 class="card-title text-white">Hand-cut Ribeye</h6>
+                                                    </a>
+                                                    <p class="card-price text-left text-white">$299</p>
+                                                </div>
+                                                <div class="button-right">
+                                                    <button class="btn" type="button btn-add-order">
+                                                        <i class="fas fa-plus-circle icon-add-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-body text-center">
+                                            <div class="card-related position-relative">
+                                                <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto"
+                                                    height="auto" />
+                                                <div class="add-to-order">
+                                                    <a href="my-order.html">
+                                                        <h6 class="card-title text-white">Hand-cut Ribeye</h6>
+                                                    </a>
+                                                    <p class="card-price text-left text-white">$299</p>
+                                                </div>
+                                                <div class="button-right">
+                                                    <button class="btn" type="button btn-add-order">
+                                                        <i class="fas fa-plus-circle icon-add-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="card">
+               <div class="form">
+                   <div class="left-side">
+                       <div class="fashion">
+                           <h3>Fashion</h3>
+                           <div class="input_text">
+                               <input type="text" placeholder="Search">
+                               <i class="fa fa-search"></i>
+                           </div>
+                       </div>
+                       <div class="woman">
+                           <h5>Woman</h5>
+                           <i class="fa fa-angle-right"></i>
+                           <p>Pastel Jacket with Bejewelled Collar</p>
+                       </div>
+                       <div class="images">
+                           <div class="img_girl_left">
+                               <i class="fa fa-angle-up"></i>
+                               <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
+                               <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
+                               <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
+                               <i class="fa fa-angle-down"></i>
+                           </div>
+                           <span><img src="https://i.imgur.com/Rq0nf6K.jpg.jpg"></span>
+                       </div>
+                       <div class="right_women_img m_top">
+                           <span><img src="https://imgur.com/k6xMg7h.jpg"></span>
+                           <span><img src="https://imgur.com/cEi4yel.jpg"></span>
+                       </div>
+                       
+       
+                       
+                   </div>
+                   <div class="right-side">
+                       <div class="top_div">
+                           <span>Woman</span>
+                           <span>Man</span>
+                           <span>Designers</span>
+                           <span>Wishlist</span>
+                           <span>Cart<i class="fa fa-shopping-bag"></i></span>
+                       </div>
+                       <div class="indexing">
+                           <span><i class="fa fa-angle-left"></i> Prev</span>
+                           <small>2 of 210</small>
+                           <span>Next <i class="fa fa-angle-right"></i></span>
+                       </div>
+                       <h3>Pastel Jacket With Bejewelled Collar</h3>
+                       <h4>79.99 GBP</h4>
+                       <div class="designer">
+                           <h5>Designer : </h5>
+                           <p>Mademoiselle Tambour</p>
+                       </div>
+                       <div class="logo">
+                               <p>melle</p>
+                               <h3>TAMBOUR</h3>
+                               <h5>Mademoiselle Tambour</h5>
+                       </div>
+                       <div class="designer">
+                           <h5>Color : </h5>
+                           <p>Tobacco Brown</p>
+                           
+                       </div>
+                       <div class="color">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                       </div>
+                       <div class="options">
+                           <div class="size">
+                               <select>
+                                   <option>Size : S</option>
+                                   <option>Size : M</option>
+                                   <option>Size : L</option>
+                                   <option>Size : XL</option>
+                               </select>
+                           </div>
+                           <div class="quantity">
+                               <i class="fa fa-minus"></i>
+                               <span class="qty">1</span>
+                               <i class="fa fa-plus"></i>
+                           </div>
+                           <button>Add to cart</button>
+                       </div>
+                       <div class="open_wish">
+                           <p>Open sizes guide</p>
+                           <div class="wishlist">
+                               <i class="fa fa-heart-o"></i>
+                               <p>Add to Wishlist</p>
+                           </div>
+                       </div>
+                       <div class="description">
+                           <h4>Description</h4>
+                           <p>Pastel Jacket with Bejewelled collar exclusive pattern by John Malkovich and printed on soft cotton fabric.Made in Italy. </p>
+                           <ul class="features">
+                               <li>Quilted Design</li>
+                               <li>Contrasted faux-fur collar </li>
+                               <li>Loops on the shoulder</li>
+                               <li>Side zip pockets</li>
+                               <li>Two side pockets with one press stud fasteneing</li>
+                               <li>Long sleeve with elastic cuff's</li>
+                               <li>Zip fasteneing on the front section</li>
+                           </ul>
+                           <p>Side length 31.5cm</p>
+                           <p1>Back length 56.5cm</p1>
+                       </div>
+                       <div class="share">
+                           <h4>Share</h4>
+                           <div class="social">
+                               <i class="fa fa-facebook"></i>
+                               <i class="fa fa-twitter"></i>
+                               <i class="fa fa-pinterest"></i>
+                               <i class="fa fa-google-plus"></i>
+                           </div>
+                           
+                       </div>
+                       <div class="right_women_img">
+                           <span><img src="https://imgur.com/huwj3NI.jpg.jpg"></span>
+                           <span><img src="https://imgur.com/cVUx7kR.jpg"></span>
+                       </div>
+       
+                   
+       
+                   </div>
+               </div>
+        </div>
+       </div> -->
+
+
+
+
+
+    <!-- navbar fix bottom -->
+    <nav class="navbar fixed-bottom navbar-light bg-light padding-bottom-bar">
+        <div class="d-flex justify-content-between align-self-center w-100 mx-2">
+            <button type="button" class="btn btn-my-order flex-fill m-1">
+                <div class="bg-inner">
+                    <div class="content-btn">
+                        <div class="d-flex justify-content-center w-100 padding-top">
+                            <i class="fa-solid fa-cart-shopping icon-blue icon-cart mr-1 align-self-center"></i>
+                            <p class="mb-0 my-order ml-1 align-self-center">My order<span>(10)</span></p>
+                        </div>
+                        <p class="total">$1,860,999</p>
+                    </div>
+                </div>
+            </button>
+            <button type="button" class="btn btn-add-to-order flex-fill m-1">
+                <div class="bg-inner">
+                    <div class="content-btn">Add to Order</div>
+                </div>
+            </button>
+        </div>
+
+        <!-- Float button -->
+        <div class="floating-button">
+            <button type="button" class="btn btn-floating flex-fill m-2">
+                <i class="fa-solid fa-phone-flip icon-white-big mr-1 align-self-center"></i>
+                <!-- <i class="fa-solid fa-bowl-food"></i> -->
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/cart.js"></script>
+    <script src="./js/font-awesome.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 3,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+
+    <script>
+        $("#btnAddDish").click(function () {
+            $(this).addClass("d-none");
+            $("#minusPlus").addClass("d-block padding-top");
+        });
+
+    </script>
+
+</body>
+
+</html>

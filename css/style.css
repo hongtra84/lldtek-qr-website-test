@@ -297,13 +297,14 @@ body {
 
 .btn-floating {
     position: absolute;
-    right: -17px;
+    /* right: -17px; */
+    right: 0px;
     bottom: 50px;
     background: orange;
     border-radius: 50%;
     width: 55px;
     height: 55px;
-    bottom: 70px;
+    bottom: 90px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
     padding: 0 6px 0 4px;
 }
@@ -324,3 +325,68 @@ body {
 .btn.disabled.opacity-0 {
     opacity: 0;
 }
+
+
+
+/* my order */
+.card.bg-white{
+    background: #fff;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    padding: 10px;
+}
+.normal-text{
+    color: #909090;
+    font-size: 14px;
+}
+.my-orders #minusPlus{
+    display: block;
+}
+.normal-radius{
+    border-radius: 10px;
+}
+.card-related .add-to-order{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 10px 10px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9));
+}
+.icon-add-blue{
+    font-size: 44px;
+    color: #0E61C3;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+}
+.button-right{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.btn-add-order{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+/* swiper for related dish */
+
+.swiper {
+    width: 300px;
+    height: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
