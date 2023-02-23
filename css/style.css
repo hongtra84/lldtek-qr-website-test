@@ -32,10 +32,6 @@ body {
     padding: 4px 8px;
 }
 
-.navbar-brand {
-    padding-top: 0;
-}
-
 .bg-blue {
     background-image: linear-gradient(to bottom, #001F4C, #0061C1);
 }
@@ -49,6 +45,7 @@ body {
     font-weight: 500;
     margin-right: 0;
     padding-bottom: 0;
+    padding-top: 0.1rem;
 }
 
 .nav-pills .nav-link {
@@ -425,3 +422,57 @@ body {
     text-align: center;
     height: auto;
 }
+
+.my-orders .card-title{
+    padding-right: 0;
+    padding-top: 0.75rem;
+}
+
+/* ul li scroll horizontal */
+ul.horizontal-slide {
+    margin: 0;
+    padding: 0;
+    width: 375px; /*  edit */
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+ul.horizontal-slide li[class*="span"] {
+    display: inline-block;
+    float: none;
+}
+
+ul.horizontal-slide li[class*="span"]:first-child {
+    margin-left: 0;
+}
+
+
+/* customer radio button  */
+
+label.radio {
+    cursor: pointer;
+  }
+  
+  label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  label.radio span {
+    padding: 3px 9px;
+    border: 1px solid #8f37aa;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  
+  label.radio input:checked + span {
+    border-color: #8f37aa;
+    background-color: #8f37aa;
+    color: #fff;
+  }

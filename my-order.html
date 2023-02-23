@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-	<link href="./css/font-awesome.css" type="text/css">
+    <link href="./css/font-awesome.css" type="text/css">
 
-	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -24,7 +24,7 @@
     <!-- navbar fix top-->
     <nav class="navbar sticky-top navbar-top bg-blue">
         <div class="d-flex justify-content-between align-self-center w-100">
-            <button class="btn" type="button">
+            <button class="btn" type="button" onclick="location.href='index.html'">
                 <i class="fa-solid fa-arrow-left-long icon-white"></i>
             </button>
 
@@ -51,14 +51,9 @@
                         <div class="col-5">
                             <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
                                 height="auto" />
+                            <h6 class="card-title">Hand-cut Ribeye</h6>
                         </div>
                         <div class="col-7">
-                            <h6 class="card-title">Hand-cut Ribeye</h6>
-                            <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
                             <div class="d-flex justify-content-between">
                                 <p class="card-price align-self-center">$299</p>
                                 <div class="align-self-center">
@@ -67,7 +62,8 @@
                                             <button class="btn minus minus-plus" type="button">
                                                 <i class="fas fa-minus-circle icon-grey"></i>
                                             </button>
-                                            <input type="text" class="form-control quantity" id="adults" size="10" value="0">
+                                            <input type="text" class="form-control quantity" id="adults" size="10"
+                                                value="0">
                                             <button class="btn plus minus-plus" type="button">
                                                 <i class="fas fa-plus-circle icon-blue"></i>
                                             </button>
@@ -75,44 +71,117 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card bg-white m-2">
-                    <div class="row">
-                        <div class="col-5">
-                            <img class='mx-auto img-thumbnail' src="./images/food-01.jpg" width="auto" height="auto" />
-                        </div>
-                        <div class="col-7">
-                            <h6 class="card-title">Hand-cut Ribeye</h6>
-                            <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-price align-self-center">$299</p>
-                                <div class="align-self-center">
-                                    <div id="minusPlus">
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn minus minus-plus" type="button">
-                                                <i class="fas fa-minus-circle icon-grey"></i>
-                                            </button>
-                                            <p class="num-food">4</p>
-                                            <button class="btn plus minus-plus" type="button">
-                                                <i class="fas fa-plus-circle icon-blue"></i>
-                                            </button>
-                                        </div>
-                                    </div>
 
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- related items -->
+                <div class="card bg-white m-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="horizontal-slide">
+                                <li class="span2">
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Rare" checked>
+                                        <span>Rare</span>
+                                     </label>
+                                </li>
+                                <li class="span2">
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Rare" checked>
+                                        <span>Rare</span>
+                                     </label>
+                                </li>
+                                <li class="span2">
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Rare" checked>
+                                        <span>Rare</span>
+                                    </label>
+                                </li>
+                                 <li class="span2"></li>
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Medium rare"> 
+                                        <span>Medium rare</span>
+                                    </label>
+                                </li>
+                                 <li class="span2">
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Medium">
+                                        <span>Medium</span> 
+                                    </label>
+                                </li>
+                                <li class="span2">
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Medium well">
+                                        <span>Medium well</span> 
+                                    </label>
+                                </li>
+                                <li class="span2">
+                                    <label class="radio"> 
+                                        <input type="radio" name="p-type" value="Well">
+                                        <span>Well</span> 
+                                    </label>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
                 </div>
 
+
+                <!-- description -->
+                <div class="card bg-white m-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- navbar fix bottom -->
+                <nav class="navbar fixed-bottom navbar-light bg-light padding-bottom-bar">
+                    <div class="d-flex justify-content-between align-self-center w-100 mx-2">
+                        <button type="button" class="btn btn-my-order flex-fill m-1">
+                            <div class="bg-inner">
+                                <div class="content-btn">
+                                    <div class="d-flex justify-content-center w-100 padding-top">
+                                        <i
+                                            class="fa-solid fa-cart-shopping icon-blue icon-cart mr-1 align-self-center"></i>
+                                        <p class="mb-0 my-order ml-1 align-self-center">My order<span>(10)</span></p>
+                                    </div>
+                                    <p class="total">$1,860,999</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" class="btn btn-add-to-order flex-fill m-1">
+                            <div class="bg-inner">
+                                <div class="content-btn">Add to Order</div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Float button -->
+                    <div class="floating-button">
+                        <button type="button" class="btn btn-floating flex-fill m-2">
+                            <i class="fa-solid fa-phone-flip icon-white-big mr-1 align-self-center"></i>
+                            <!-- <i class="fa-solid fa-bowl-food"></i> -->
+                        </button>
+                    </div>
+                </nav>
+
+
+
+                <!-- 
                 <div class="card bg-white m-2">
                     <div class="row">
                         <div class="col-12">
@@ -120,7 +189,6 @@
                         </div>
                     </div>
 
-                    <!-- Swiper -->
                     <div class="row">
                         <div class="col-12">
                             <div class="swiper mySwiper">
@@ -187,90 +255,59 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
 
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <!-- navbar fix bottom -->
-    <nav class="navbar fixed-bottom navbar-light bg-light padding-bottom-bar">
-        <div class="d-flex justify-content-between align-self-center w-100 mx-2">
-            <button type="button" class="btn btn-my-order flex-fill m-1">
-                <div class="bg-inner">
-                    <div class="content-btn">
-                        <div class="d-flex justify-content-center w-100 padding-top">
-                            <i class="fa-solid fa-cart-shopping icon-blue icon-cart mr-1 align-self-center"></i>
-                            <p class="mb-0 my-order ml-1 align-self-center">My order<span>(10)</span></p>
-                        </div>
-                        <p class="total">$1,860,999</p>
-                    </div>
-                </div>
-            </button>
-            <button type="button" class="btn btn-add-to-order flex-fill m-1">
-                <div class="bg-inner">
-                    <div class="content-btn">Add to Order</div>
-                </div>
-            </button>
-        </div>
+                <!-- Js -->
+                <script src="./js/jquery.slim.min.js"></script>
+                <script src="./js/bootstrap.bundle.js"></script>
 
-        <!-- Float button -->
-        <div class="floating-button">
-            <button type="button" class="btn btn-floating flex-fill m-2">
-                <i class="fa-solid fa-phone-flip icon-white-big mr-1 align-self-center"></i>
-                <!-- <i class="fa-solid fa-bowl-food"></i> -->
-            </button>
-        </div>
-    </nav>
+                <script src="./js/font-awesome.js"></script>
+                <script src="./js/cart.js"></script>
+                <script src="./js/swiper.js"></script>
 
-
-    <!-- Js -->
-	<script src="./js/jquery.slim.min.js"></script>
-	<script src="./js/bootstrap.bundle.js"></script>
-
-	<script src="./js/font-awesome.js"></script>
-	<script src="./js/cart.js"></script>
-	<script src="./js/swiper.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 3,
-            // pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true,
-            // },
-            breakpoints: {
-                "@0.00": {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                "@0.75": {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                "@1.00": {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                "@1.50": {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 3,
+                        // pagination: {
+                        //     el: ".swiper-pagination",
+                        //     clickable: true,
+                        // },
+                        breakpoints: {
+                            "@0.00": {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                            "@0.75": {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            "@1.00": {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            "@1.50": {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        },
+                    });
+                </script>
 
 
-    <script>
-        $("#btnAddDish").click(function () {
-            $(this).addClass("d-none");
-            $("#minusPlus").addClass("d-block padding-top");
-        });
+                <script>
+                    $("#btnAddDish").click(function () {
+                        $(this).addClass("d-none");
+                        $("#minusPlus").addClass("d-block padding-top");
+                    });
 
-    </script>
+                </script>
 
 </body>
 
