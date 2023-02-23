@@ -2,7 +2,7 @@
 body {
     min-height: 75rem;
     background-color: #fff;
-    /* font-family: myFirstFont; */
+    font-family: myFirstFont;
 }
 
 @font-face {
@@ -563,17 +563,27 @@ button:focus {
     margin: 10px !important;
     box-shadow: 0 0 4px rgb(87 87 87 / 50%);
 }
+.my-orders .card{
+    /* border-color: #EBF6FF; */
+    background: #fff;
+    border-color: #fff;
+}
 .my-orders .card-header{
-    
-    background-color: transparent;
+    /* background-color: #EBF6FF; */
+    background: #fff;
     padding: 0.75rem;
     border: none;
-    
-    
+}
+.my-orders .card-header .collapse{
+    background: #EBF6FF;
+}
+.my-orders .card-header a.btn-link:hover{
+    text-decoration: none;
 }
 .my-orders .card-body{
-    padding: 10px;
-    background: transparent;
+    padding: 10px 12px 10px 10px;
+    /* background: #EBF6FF; */
+    background: #fff;
 }
 .my-orders .card-title{
     color: #383838;
@@ -585,9 +595,16 @@ button:focus {
     font-weight: 400;
 }
 .my-orders .card-price.small{
-    font-size: 18px;
+    font-size: 16px;
     color: #383838;
     font-weight: 400;
+    width: 100px;
+}
+.my-orders .quantity{
+    background: #EBF6FF;
+}
+.my-orders .card-price.small.total{
+    color:  #0E61C3;
 }
 .my-orders .btn{
     padding: 0.375rem 1rem;
@@ -598,15 +615,21 @@ button:focus {
 
 .my-orders .icon-blue-big
 {
-    font-size: 24px;
+    font-size: 22px;
     color: #0E61C3;
 }
 .my-orders .icon-grey-big{
-    font-size: 24px;
+    font-size: 22px;
     color: #909090;
 }
 .my-orders .icon-grey{
-    color: #A8A8A8;
+    color: #BFBFBF;
+}
+.my-orders .icon-blue{
+    color: #61A6E5;
+}
+.my-orders .line-seperate{
+    margin: 0.5rem 0;
 }
 .title-add-item{
     color: #0E61C3;
