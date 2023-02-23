@@ -437,7 +437,7 @@ body {
 /* ul li scroll horizontal */
 ul.horizontal-slide {
     display: flex;
-    margin: 0;
+    margin: 3px;
     padding: 0;
     /* width: 375px; */ /*  edit */
     white-space: nowrap;
@@ -473,7 +473,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
 /* customer radio button  */
 
 label{
-    margin: 3px 0;
+    margin: 5px;
 }
 label.radio {
     cursor: pointer;
@@ -488,19 +488,50 @@ label.radio {
   }
   
   label.radio .item {
-    padding: 2px 15px;
-    border: 1px solid transparent;
+    padding: 11px 15px;
+    border: 1px solid #7aa9ed;
     display: inline-block;
     color: #333;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 14px;
     line-height: 1;
+    height: 38px;
+  }
+  label.radio .group-item {
+    padding: 4px 15px;
+    border: 1px solid #7aa9ed;
+    display: inline-block;
+    color: #262626;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1;
+    height: 38px;
   }
   
   label.radio input:checked + .item {
-    border: 1px solid #0E61C3;
-    background-color: transparent;
+    border: 1px solid #0d59b5;
+    background: #d7e7ff;
     color: #0E61C3;
+  }
+  label.radio input:checked + .group-item {
+    border: 1px solid #0d59b5;
+    background: #d7e7ff;
+    color: #0E61C3;
+  }
+  label.radio input:checked + .group-item .text-top {
+    color: #0E61C3;
+  }
+
+  .text-top{
+    color: #262626;
+    display: block;
+    text-align: center;
+  }
+  .text-bottom{
+    color: #7A7A7A;
+    display: block;
+    text-align: center;
+    font-size: 12px;
   }
 
   /* custom input with label */
@@ -555,18 +586,19 @@ button:focus {
 
 /* expand and collapse */
 .my-orders .card{
-    background: #fff;
     border-radius: 0;
     border: 1px solid #eee;
     border-radius: 10px !important;
     padding: 0;
     margin: 10px !important;
     box-shadow: 0 0 4px rgb(87 87 87 / 50%);
-}
-.my-orders .card{
     /* border-color: #EBF6FF; */
     background: #fff;
     border-color: #fff;
+}
+.my-orders .card.no-shadow{
+    box-shadow: none;
+    border: 1px solid #eee;
 }
 .my-orders .card-header{
     /* background-color: #EBF6FF; */
@@ -587,7 +619,9 @@ button:focus {
 }
 .my-orders .card-title{
     color: #383838;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1;
+    padding: 2px 0 4px 0;
 }
 .my-orders .card-price{
     font-size: 20px;
@@ -601,7 +635,7 @@ button:focus {
     width: 100px;
 }
 .my-orders .quantity{
-    background: #EBF6FF;
+    background: #fff;
 }
 .my-orders .card-price.small.total{
     color:  #0E61C3;
@@ -611,6 +645,16 @@ button:focus {
 }
 .my-orders .btn-add-to-order{
     padding: 1px 1px 2px 1px;
+}
+.margin-row{
+    margin: 0 0 0 0;
+}
+.btn.btn-arrow-down{
+    padding: 0.375rem 1.2rem;
+}
+.icon-arrow-title{
+    font-size: 20px;
+    color: #383838;
 }
 
 .my-orders .icon-blue-big

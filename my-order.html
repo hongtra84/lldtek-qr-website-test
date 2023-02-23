@@ -44,569 +44,586 @@
     </nav>
 
 
-    
+
 
     <div class="container-fluid my-orders">
         <div class="">
             <div class="accordion" id="accordionExample">
                 <!-- card repeat -->
                 <div class="card">
-                  <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h2 class="mb-0">
-                      <a class="btn btn-link p-0" type="button">
-                        <div class="col-12 px-0">
-                            <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
-                        </div>
-                        <div class="row">
-                            <div class="col-5">
-                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto" height="auto" />
+                    <div class="card-header pt-0">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link w-100 p-0" type="button" id="headingOne" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="row margin-row">
+                                    <div class="col-10 px-0 align-self-center">
+                                        <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+                                    </div>
+                                    <div class="col-2 pr-0 align-self-center">
+                                        <button class="btn btn-arrow-title" type="button">
+                                            <i class="fa-solid fa-angle-down icon-arrow-down"></i>
+                                        </button>
+                                        <!-- <button class="btn btn-arrow-title" type="button">
+                                            <i class="fa-solid fa-angle-up icon-arrow-up"></i>
+                                        </button> -->
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="row">
+                                <div class="col-5">
+                                    <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg"
+                                        width="auto" height="auto" />
+                                </div>
+                                <div class="col-7 px-0 align-self-center border-bottom">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="card-price align-self-center">$25.00</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey-big"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue-big"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="col-7 px-0 align-self-center">
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-price align-self-center">$25.00</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus">
-                                            <div class="d-flex justify-content-end align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey-big"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue-big"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-            
-                            </div>
-                        </div>
-                      </a>
-                    </h2>
-                  </div>
-
-                  
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body pt-0">
-                        <div class="row m-0">
-                            <div class="col-12 px-0 align-self-center">
-                                <div class="d-flex justify-content-between">
-                                    <p class="align-self-center mb-0 name-item">8-oz</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus">
-                                            <div class="d-flex justify-content-end align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="card-price small align-self-center text-right">$3.50</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="align-self-center mb-0 name-item">Medium Rare</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus">
-                                            <div class="d-flex justify-content-end align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="card-price small align-self-center text-right">$1.50</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="align-self-center mb-0 name-item">Girlled Onions</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus">
-                                            <div class="d-flex justify-content-end align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="card-price small align-self-center text-right">$1.50</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus">
-                                            <div class="d-flex justify-content-end align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="card-price small align-self-center text-right">$2.50</p>
-                                </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="align-self-center mb-0 name-item">Texas Chili</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus">
-                                            <div class="d-flex justify-content-end align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="card-price small align-self-center text-right">$1.00</p>
-                                </div>
-
-                                <hr class="line-seperate"/>
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="align-self-center mb-0 name-item">Sub Items Total</p>
-                                    <p class="card-price small total align-self-center text-right">$7.50</p>
-                                </div>
-            
-                            </div>
-                        </div>
-
-                        
-                        
-
-
-                        
-
+                        </h2>
                     </div>
-                  </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body pt-0">
+                            <div class="row m-0">
+                                <div class="col-12 px-0 align-self-center">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">8-oz</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$3.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Medium Rare</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Girlled Onions</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$2.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Texas Chili</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.00</p>
+                                    </div>
+
+                                    <hr class="line-seperate" />
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sub Items Total</p>
+                                        <p class="card-price small total align-self-center text-right">$7.50</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                      <h2 class="mb-0">
-                        <a class="btn btn-link p-0" type="button">
-                          <div class="col-12 px-0">
-                              <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
-                          </div>
-                          <div class="row">
-                              <div class="col-5">
-                                  <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto" height="auto" />
-                              </div>
-                              <div class="col-7 px-0 align-self-center">
-                                  <div class="d-flex justify-content-between">
-                                      <p class="card-price align-self-center">$25.00</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey-big"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue-big"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-              
-                              </div>
-                          </div>
-                        </a>
-                      </h2>
-                    </div>
-  
-                    
-                
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="card-body pt-0">
-                          <div class="row m-0">
-                              <div class="col-12 px-0 align-self-center">
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">8-oz</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$3.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Medium Rare</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$1.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Girlled Onions</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$1.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$2.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Texas Chili</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$1.00</p>
-                                  </div>
-  
-                                  <hr class="line-seperate"/>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Sub Items Total</p>
-                                      <p class="card-price small total align-self-center text-right">$7.50</p>
-                                  </div>
-              
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                      <h2 class="mb-0">
-                        <a class="btn btn-link p-0" type="button">
-                          <div class="col-12 px-0">
-                              <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
-                          </div>
-                          <div class="row">
-                              <div class="col-5">
-                                  <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto" height="auto" />
-                              </div>
-                              <div class="col-7 px-0 align-self-center">
-                                  <div class="d-flex justify-content-between">
-                                      <p class="card-price align-self-center">$25.00</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey-big"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue-big"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-              
-                              </div>
-                          </div>
-                        </a>
-                      </h2>
-                    </div>
-  
-                    
-                
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="card-body pt-0">
-                          <div class="row m-0">
-                              <div class="col-12 px-0 align-self-center">
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">8-oz</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$3.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Medium Rare</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$1.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Girlled Onions</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$1.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$2.50</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Texas Chili</p>
-                                      <div class="align-self-center">
-                                          <div id="minusPlus">
-                                              <div class="d-flex justify-content-end align-items-center">
-                                                  <button class="btn minus minus-plus" type="button">
-                                                      <i class="fas fa-minus-circle icon-grey"></i>
-                                                  </button>
-                                                  <input type="text" class="form-control quantity" id="adults" size="10" value="1">
-                                                  <button class="btn plus minus-plus" type="button">
-                                                      <i class="fas fa-plus-circle icon-blue"></i>
-                                                  </button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <p class="card-price small align-self-center text-right">$1.00</p>
-                                  </div>
-  
-                                  <hr class="line-seperate"/>
-  
-                                  <div class="d-flex justify-content-between">
-                                      <p class="align-self-center mb-0 name-item">Sub Items Total</p>
-                                      <p class="card-price small total align-self-center text-right">$7.50</p>
-                                  </div>
-              
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                <!-- <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        
-                        <div class="d-flex flex-nowrap">
-                            <ul class="horizontal-slide">
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Rare" checked>
-                                        <div class="item">
-                                            <span class="d-block">Rare</span>
-                                            <span class="d-block">($35)</span>
+                    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link p-0" type="button">
+                                <div class="col-10 px-0">
+                                    <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg"
+                                            width="auto" height="auto" />
+                                    </div>
+                                    <div class="col-7 px-0 align-self-center">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-price align-self-center">$25.00</p>
+                                            <div class="align-self-center">
+                                                <div id="minusPlus">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn minus minus-plus" type="button">
+                                                            <i class="fas fa-minus-circle icon-grey-big"></i>
+                                                        </button>
+                                                        <input type="text" class="form-control quantity" id="adults"
+                                                            size="10" value="1">
+                                                        <button class="btn plus minus-plus" type="button">
+                                                            <i class="fas fa-plus-circle icon-blue-big"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Rare" checked>
-                                        <span class="item">Rare</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Rare" checked>
-                                        <span class="item">Rare</span>
-                                    </label>
-                                </li>
-                                <li class="span2"></li>
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Medium rare">
-                                        <span class="item">Medium rare</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Medium">
-                                        <span class="item">Medium</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Medium well">
-                                        <span class="item">Medium well</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="radio" name="p-type" value="Well">
-                                        <span class="item">Well</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-            
-                        <hr>
-            
-                        <div class="d-flex flex-wrap">
-                            <ul class="multi-checkbox">
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Rare" checked>
-                                        <span class="item">Grill onion</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Rare">
-                                        <span class="item">Steam Onion</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Rare">
-                                        <span class="item">Rare</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Medium rare">
-                                        <span class="item">Medium rare</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Medium">
-                                        <span class="item">Medium</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Medium well">
-                                        <span class="item">Medium well</span>
-                                    </label>
-                                </li>
-                                <li class="span2">
-                                    <label class="radio">
-                                        <input type="checkbox" name="p-type" value="Well">
-                                        <span class="item">Well</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                                    </div>
+                                </div>
+                            </a>
+                        </h2>
                     </div>
-                  </div>
-                </div> -->
+
+
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body pt-0">
+                            <div class="row m-0">
+                                <div class="col-12 px-0 align-self-center">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">8-oz</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$3.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Medium Rare</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Girlled Onions</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$2.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Texas Chili</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.00</p>
+                                    </div>
+
+                                    <hr class="line-seperate" />
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sub Items Total</p>
+                                        <p class="card-price small total align-self-center text-right">$7.50</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="true" aria-controls="collapseThree">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link p-0" type="button">
+                                <div class="col-12 px-0">
+                                    <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg"
+                                            width="auto" height="auto" />
+                                    </div>
+                                    <div class="col-7 px-0 align-self-center">
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-price align-self-center">$25.00</p>
+                                            <div class="align-self-center">
+                                                <div id="minusPlus">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button class="btn minus minus-plus" type="button">
+                                                            <i class="fas fa-minus-circle icon-grey-big"></i>
+                                                        </button>
+                                                        <input type="text" class="form-control quantity" id="adults"
+                                                            size="10" value="1">
+                                                        <button class="btn plus minus-plus" type="button">
+                                                            <i class="fas fa-plus-circle icon-blue-big"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </h2>
+                    </div>
+
+
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body pt-0">
+                            <div class="row m-0">
+                                <div class="col-12 px-0 align-self-center">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">8-oz</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$3.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Medium Rare</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Girlled Onions</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$2.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Texas Chili</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="adults"
+                                                        size="10" value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small align-self-center text-right">$1.00</p>
+                                    </div>
+
+                                    <hr class="line-seperate" />
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sub Items Total</p>
+                                        <p class="card-price small total align-self-center text-right">$7.50</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
+
         </div>
 
-        
-        <p class="title-add-item">Add items</p>
 
+        <p class="title-add-item">Add items</p>
+        <div class="card no-shadow">
+            <div class="">
+                <ul class="horizontal-slide flex-wrap justify-content-around">
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="radio" name="p-type" value="Rare" checked>
+                            <div class="group-item">
+                                <span class="text-top">Rare</span>
+                                <span class="text-bottom">($35)</span>
+                            </div>
+                            
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="radio" name="p-type" value="Rare">
+                            <span class="item">Medium Rare</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="radio" name="p-type" value="Rare">
+                            <span class="item">Rare</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="radio" name="p-type" value="Rare">
+                            <div class="group-item">
+                                <span class="text-top">Rare</span>
+                                <span class="text-bottom">($35)</span>
+                            </div>
+                            
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="radio" name="p-type" value="Rare">
+                            <span class="item">Rare</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="d-flex flex-wrap">
+                <ul class="multi-checkbox">
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Rare" checked>
+                            <span class="item">Rare</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Rare">
+                            <span class="item">Medium Rare</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Rare">
+                            <span class="item">Medium</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Medium rare">
+                            <span class="item">Medium Well</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Medium">
+                            <span class="item">Well Done</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Medium well">
+                            <span class="item">Medium well</span>
+                        </label>
+                    </li>
+                    <li class="span2">
+                        <label class="radio">
+                            <input type="checkbox" name="p-type" value="Well">
+                            <span class="item">Well</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
 
         <!-- Customer request -->
@@ -652,7 +669,7 @@
                 </button> -->
                 <button type="button" class="btn btn-add-to-order flex-fill m-1">
                     <div class="bg-inner">
-                        <div class="content-btn">SUBMIT 
+                        <div class="content-btn">SUBMIT
                             <span>$23.50</span>
                         </div>
                     </div>
