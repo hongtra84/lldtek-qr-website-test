@@ -519,7 +519,7 @@ label.radio input {
 }
 
 label.radio .item {
-    padding: 11px 15px;
+    padding: 9px 15px;
     border: 1px solid #7aa9ed;
     color: #333;
     border-radius: 10px;
@@ -802,17 +802,23 @@ button:focus {
 }
 
 .card .form-group {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
+}
+.card.no-card{
+    border: 1px solid #eee;
+    border-radius: 11px !important;
 }
 
 .form-control.textarea {
     background: transparent;
     padding: 10px !important;
     font-size: 16px !important;
+    border-radius: 11px !important;
+    border: 1px solid #0d59b5 !important;
 }
 
 .form-control.textarea:focus {
-    border-bottom: none !important;
+    border: 1px solid #0d59b5 !important;
 }
 
 .form-group .textarea::placeholder {
@@ -820,7 +826,7 @@ button:focus {
 }
 
 .description {
-    font-size: 14px;
+    font-size: 16px;
     color: #383838;
     padding: 8px 10px;
     margin-bottom: 0;
