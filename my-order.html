@@ -523,7 +523,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
@@ -540,7 +540,7 @@
                                 <span class="text-top">Rare</span>
                                 <span class="text-bottom">($35)</span>
                             </div>
-                            
+
                         </label>
                     </li>
                     <li class="span2">
@@ -562,7 +562,7 @@
                                 <span class="text-top">Rare</span>
                                 <span class="text-bottom">($35)</span>
                             </div>
-                            
+
                         </label>
                     </li>
                     <li class="span2">
@@ -699,6 +699,16 @@
     <script src="./js/font-awesome.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/swiper.js"></script>
+
+
+    <script>
+        $(function () {                       //run when the DOM is ready
+            $(".card").click(function () {  //use a class, since your ID gets mangled
+                $(this).removeClass("active");
+                $(this).addClass("active");      //add the class to the clicked element
+            });
+        });
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
