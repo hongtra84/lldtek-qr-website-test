@@ -98,8 +98,9 @@ body {
 
 
 /* card */
-.margin-top-cards {
+.margin-cards {
     margin-top: 44px;
+    margin-bottom: 58px;
 }
 
 .details {
@@ -320,20 +321,21 @@ body {
 
 .btn-floating {
     position: absolute;
-    right: -17px;
+    right: -14px;
     bottom: 50px;
-    background: orange;
+    background: #008cff;
     border-radius: 50%;
-    width: 47px;
-    height: 47px;
+    width: 35px;
+    height: 35px;
     bottom: 90px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    padding: 0 4px 0 4px;
+    padding: 0.05rem 4px 0.09rem 7px !important;
+
 }
 
 .icon-white-big {
     color: #fff;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 #minusPlus {
@@ -628,7 +630,7 @@ button:focus {
     border: 1px solid #eee;
     border-radius: 10px !important;
     padding: 0;
-    margin: 10px !important;
+    margin: 15px 10px !important;
     box-shadow: 0 0 4px rgb(87 87 87 / 50%);
     /* border-color: #EBF6FF; */
     background: #fff;
@@ -637,12 +639,28 @@ button:focus {
 
 .my-orders .card.active {
     border: 1px solid #0d59b5;
+    background: #EBF6FF;
 }
-
+.my-orders .card.active .panel-heading.active {
+    background: #EBF6FF;
+}
+.my-orders .card.active .panel-heading.de-active {
+    background: transparent;
+}
+.panel-collapse.show{
+    background: #EBF6FF;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
 .my-orders .card.non-active {
     border: 1px solid #0d59b5;
 }
-
+.my-orders .card.no-shadow.active {
+    box-shadow: 0;
+    border: none;
+}
 .my-orders .card.no-shadow {
     box-shadow: 0 0 1px rgb(87 87 87 / 50%);
     /* border: 1px solid #eee; */
@@ -659,6 +677,8 @@ button:focus {
     background: #EBF6FF;
     border: 1px solid #eee;
 }
+
+
 
 .my-orders .card-header a.btn-link:hover {
     text-decoration: none;
@@ -694,10 +714,11 @@ button:focus {
 .my-orders .img-thumbnail {
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
+    padding: 1px;
 }
 
 .my-orders .quantity {
-    background: #fff;
+    background: transparent;
 }
 
 .my-orders .card-price.small.total {
@@ -705,19 +726,21 @@ button:focus {
 }
 
 .my-orders .btn {
-    padding: 0.375rem 1rem;
+    padding: 0.09rem 0.9rem;
 }
 
 .my-orders .btn-add-to-order {
     padding: 1px 1px 2px 1px;
 }
-
+.icon-arrow-up{
+    display: none ;
+}
 .my-orders .total {
     margin-top: 0;
 }
 
 .margin-row {
-    margin: 0 0 0 0;
+    margin: 0 -8px 0 0;
 }
 
 .row-flex .card-price {
@@ -740,7 +763,7 @@ button:focus {
 
 .show-line {
     height: 100%;
-    padding: 15px 0;
+    padding: 15px 5px 15px 0;
     border-bottom: 1px solid #bad1e5;
 }
 
@@ -750,10 +773,7 @@ button:focus {
 }
 
 .margin-right-back {
-    margin-right: -2rem;
-}
-.btn-arrow-title{
-    margin-right: -24px;
+    margin-right: -1.9rem;
 }
 
 .btn.btn-arrow-down {
@@ -797,7 +817,7 @@ button:focus {
     font-weight: bold;
     font-size: 16px;
     border-bottom: 1px solid #0E61C3;
-    padding: 5px 10px;
+    padding: 15px 10px 5px 10px;
     margin-bottom: 0.7rem;
 }
 
@@ -805,7 +825,7 @@ button:focus {
     margin-bottom: 0 !important;
 }
 .card.no-card{
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     border-radius: 11px !important;
 }
 
@@ -814,7 +834,7 @@ button:focus {
     padding: 10px !important;
     font-size: 16px !important;
     border-radius: 11px !important;
-    border: 1px solid #0d59b5 !important;
+    /* border: 1px solid #0d59b5 !important; */
 }
 
 .form-control.textarea:focus {
@@ -836,24 +856,27 @@ button:focus {
 
 .my-orders .name-item {
     width: 70%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.wrapper {
-    width: 50%;
-
-    margin-top: 50px;
-}
 
 @media(max-width:992px) {
     .wrapper {
         width: 100%;
     }
 }
+.btn-arrow-title{
+    padding: 0.09rem 0.75rem !important;
+}
 
 .panel-heading {
     padding: 0;
     border: 0;
-    padding: 9px 3px !important;
+    padding: 0.45rem 0.9rem 0.75rem 0.75rem;
+    border-radius: 11px;
 }
 
 .panel-title>a,
@@ -867,24 +890,34 @@ button:focus {
     word-spacing: 3px;
     text-decoration: none;
 }
-
-.panel-heading a:before {
-    font-family: 'Glyphicons Halflings';
-    content: "\e114";
-    float: right;
-    transition: all 0.5s;
+.padding-x{
+    padding: 0 12px 15px 12px;
+}
+.fa-long-arrow-down:before {
+    content: "\f175"; 
 }
 
-.panel-heading.active a:before {
+.panel-heading.active .btn-arrow-title {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
-    transform: rotate(180deg);
+    transform: rotate(180deg);         /* use rotate arrow */
 }
+
 
 .panel-default>.panel-heading {
     color: #282b2f;
-    background-color: #ffffff !important;
+    background-color: transparent !important;
     border-color: #d5d5d5;
+}
+.panel-default>.panel-heading.active{
+    background-color: #EBF6FF !important;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.panel-default>.panel-heading.active .quantity{
+    background-color: transparent !important;
 }
 
 @keyframes click-wave {
@@ -937,7 +970,7 @@ button:focus {
     background: #2874ef
 }
 
-.option-input:checked::before {
+.option-input:checked:before {
     height: 24px;
     width: 24px;
     position: absolute;
@@ -949,7 +982,7 @@ button:focus {
     line-height: 26px;
 }
 
-.option-input:checked::after {
+.option-input:checked:after {
     -webkit-animation: click-wave 0.15s;
     -moz-animation: click-wave 0.15s;
     animation: click-wave 0.15s;

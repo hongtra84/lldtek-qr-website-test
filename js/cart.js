@@ -1,5 +1,5 @@
 $(function(){
-  $('.minus-plus').click(function() {
+  $('#minus-plus').click(function() {
      var valueElement = $('#'+$(this).siblings('input').attr('id'));
 
      if($(this).hasClass('plus')) 
