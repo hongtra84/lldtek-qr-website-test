@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>QR Website</title>
+    <title>My Order</title>
 </head>
 
 <body>
@@ -21,11 +21,11 @@
     <nav class="navbar sticky-top navbar-top bg-blue">
         <div class="d-flex justify-content-between align-self-center w-100">
             <button class="btn" type="button" onclick="location.href='index.html'">
-                <i class="fa-solid fa-arrow-left-long icon-white"></i>
+                <i class="fa-solid fa-angle-left icon-white"></i>
             </button>
 
-            <a class="navbar-brand title-bar" href="#">Sub Items</a>
-            <div class="dropdown">
+            <a class="navbar-brand title-bar" href="#">My Order</a>
+            <div class="dropdown opacity-0">
 
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-list-ul icon-white"></i>
@@ -39,44 +39,40 @@
         </div>
     </nav>
 
-    <div class="container-fluid my-orders">
+    <div class="container-fluid sub-items">
         <div class="wrapper center-block">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default card">
-                    <div id="headingOne" class="panel-heading " role="tab">
+                    <div id="headingOne" class="panel-heading" role="tab">
                         <h6 class="panel-title">
                             <div class="row margin-row">
-                                <div class="col-10 col-md-11 px-0 align-self-center">
-                                    <a role="button" >
-                                        <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+                                <div class="col-12 col-md-11 px-0 align-self-center">
+                                    <a role="button">
+                                        <h6 class="card-title">Hand-cut Ribeye text expanded here</h6>
                                     </a>
-                                </div>
-                                <div class="col-2 col-md-1 pl-0 pr-0 align-self-center text-right">
-                                    <button  class="btn btn-arrow-title" type="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                      <i class="fa-solid fa-angle-down icon-arrow-down"></i>
-                                    </button>
-                                   
-                                    <!-- <button id="btnExpandCollapse" class="btn btn-arrow-title" type="button"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <i class="fa-solid fa-angle-down icon-arrow-down"></i>
-                                        <i class="fa-solid fa-angle-up icon-arrow-up"></i>
-                                    </button> -->
                                 </div>
                             </div>
                         </h6>
                         <div class="row row-flex mr-0">
-                            <div class="col-5" style="height: 100%">
+                            <div class="col-5">
                                 <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
                                     height="auto" />
                             </div>
-                            <div id="rightDetailFood" class="col-7 px-0 align-self-center rightDetailFood dont-show-line">
-                                <div class="d-flex justify-content-between right-content">
-                                    <p class="card-price align-self-center">$25.00</p>
+                            <div class="col-7 px-0 d-flex flex-column justify-content-between right-detail-food">
+                                <div class="d-flex justify-content-between right-content-top">
+                                    <p class="card-price small-top align-self-center">$25.00</p>
                                     <div class="align-self-center">
-                                        <div id="minusPlus" class="group-minus-plus">
-                                            <div class="d-flex justify-content-end align-items-center margin-right-back">
+                                        <button class="btn btn-arrow-title right" type="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <i class="fa-solid fa-angle-right icon-arrow-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="align-self-center">
+                                        <div id="minusPlus" class="group-minus-plus  margin-left-back">
+                                            <div class="d-flex justify-content-start align-items-center">
                                                 <button class="btn minus minus-plus" type="button">
                                                     <i class="fas fa-minus-circle icon-grey-big"></i>
                                                 </button>
@@ -88,12 +84,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <p class="card-price align-self-center">$33.00</p>
                                 </div>
+                                <div id="blueLine" class="row blue-line1 blue-line"></div>
                             </div>
                             <hr>
                         </div>
-
-
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
                         aria-labelledby="headingOne">
@@ -103,13 +99,178 @@
                                     <div class="d-flex justify-content-between">
                                         <p class="align-self-center mb-0 name-item">8-oz</p>
                                         <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus d-none">
+                                            <div id="minusPlus" class="group-minus-plus small d-none">
                                                 <div class="d-flex justify-content-end align-items-center">
                                                     <button class="btn minus minus-plus" type="button">
                                                         <i class="fas fa-minus-circle icon-grey"></i>
                                                     </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small-right align-self-center text-right">$3.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Well Done</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus" class="group-minus-plus small d-none">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small-right align-self-center text-right">--</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Girlled Onions</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus" class="group-minus-plus small">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small-right align-self-center text-right">$1.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Sauteed Mushrooms Mushrooms
+                                            Mushrooms</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus" class="group-minus-plus small">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small-right align-self-center text-right">$2.50</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">Texas Chili</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus" class="group-minus-plus small">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
+                                                    <button class="btn plus minus-plus" type="button">
+                                                        <i class="fas fa-plus-circle icon-blue"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-price small-right align-self-center text-right">$1.00</p>
+                                    </div>
+
+                                    <hr class="line-seperate" />
+
+                                    <div class="d-flex justify-content-between">
+                                        <a href="sub-items.html" class="d-flex justify-content-between">
+                                            <p class="align-self-center mb-0 text-sub-total">Sub Items Total... </p>
+                                            <i class="align-self-center fa-solid fa-pencil ml-1 mb-1 icon-edit"></i>
+                                        </a>
+                                        <p class="card-price small total align-self-center text-right">$7.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default card">
+                    <div id="headingTwo" class="panel-heading" role="tab">
+                        <h6 class="panel-title">
+                            <div class="row margin-row">
+                                <div class="col-12 col-md-11 px-0 align-self-center">
+                                    <a role="button">
+                                        <h6 class="card-title">Hand-cut Ribeye text expanded here</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </h6>
+                        <div class="row row-flex mr-0">
+                            <div class="col-5">
+                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
+                                    height="auto" />
+                            </div>
+                            <div class="col-7 px-0 d-flex flex-column justify-content-between right-detail-food">
+                                <div class="d-flex justify-content-between right-content-top">
+                                    <p class="card-price small align-self-center">$25.00</p>
+                                    <div class="align-self-center">
+                                        <button class="btn btn-arrow-title right" type="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            <i class="fa-solid fa-angle-right icon-arrow-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="align-self-center">
+                                        <div id="minusPlus" class="group-minus-plus  margin-left-back">
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <button class="btn minus minus-plus" type="button">
+                                                    <i class="fas fa-minus-circle icon-grey-big"></i>
+                                                </button>
+                                                <input type="text" class="form-control quantity" id="" size="10"
+                                                    value="1">
+                                                <button class="btn plus minus-plus" type="button">
+                                                    <i class="fas fa-plus-circle icon-blue-big"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-price align-self-center">$33.00</p>
+                                </div>
+                                <div id="blueLine2" class="row blue-line2 blue-line"></div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <div class="row m-0">
+                                <div class="col-12 padding-x align-self-center">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="align-self-center mb-0 name-item">8-oz</p>
+                                        <div class="align-self-center">
+                                            <div id="minusPlus" class="group-minus-plus small d-none">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <button class="btn minus minus-plus" type="button">
+                                                        <i class="fas fa-minus-circle icon-grey"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
                                                     <button class="btn plus minus-plus" type="button">
                                                         <i class="fas fa-plus-circle icon-blue"></i>
                                                     </button>
@@ -122,13 +283,13 @@
                                     <div class="d-flex justify-content-between">
                                         <p class="align-self-center mb-0 name-item">Well Done</p>
                                         <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus d-none">
+                                            <div id="minusPlus" class="group-minus-plus small d-none">
                                                 <div class="d-flex justify-content-end align-items-center">
                                                     <button class="btn minus minus-plus" type="button">
                                                         <i class="fas fa-minus-circle icon-grey"></i>
                                                     </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
                                                     <button class="btn plus minus-plus" type="button">
                                                         <i class="fas fa-plus-circle icon-blue"></i>
                                                     </button>
@@ -141,13 +302,13 @@
                                     <div class="d-flex justify-content-between">
                                         <p class="align-self-center mb-0 name-item">Girlled Onions</p>
                                         <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus">
+                                            <div id="minusPlus" class="group-minus-plus small">
                                                 <div class="d-flex justify-content-end align-items-center">
                                                     <button class="btn minus minus-plus" type="button">
                                                         <i class="fas fa-minus-circle icon-grey"></i>
                                                     </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
                                                     <button class="btn plus minus-plus" type="button">
                                                         <i class="fas fa-plus-circle icon-blue"></i>
                                                     </button>
@@ -160,13 +321,13 @@
                                     <div class="d-flex justify-content-between">
                                         <p class="align-self-center mb-0 name-item">Sauteed Mushrooms abc</p>
                                         <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus">
+                                            <div id="minusPlus" class="group-minus-plus small">
                                                 <div class="d-flex justify-content-end align-items-center">
                                                     <button class="btn minus minus-plus" type="button">
                                                         <i class="fas fa-minus-circle icon-grey"></i>
                                                     </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
                                                     <button class="btn plus minus-plus" type="button">
                                                         <i class="fas fa-plus-circle icon-blue"></i>
                                                     </button>
@@ -179,13 +340,13 @@
                                     <div class="d-flex justify-content-between">
                                         <p class="align-self-center mb-0 name-item">Texas Chili</p>
                                         <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus">
+                                            <div id="minusPlus" class="group-minus-plus small">
                                                 <div class="d-flex justify-content-end align-items-center">
                                                     <button class="btn minus minus-plus" type="button">
                                                         <i class="fas fa-minus-circle icon-grey"></i>
                                                     </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
+                                                    <input type="text" class="form-control quantity" id="" size="10"
+                                                        value="1">
                                                     <button class="btn plus minus-plus" type="button">
                                                         <i class="fas fa-plus-circle icon-blue"></i>
                                                     </button>
@@ -198,330 +359,17 @@
                                     <hr class="line-seperate" />
 
                                     <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Sub Items Total</p>
+                                        <a href="sub-items.html" class="d-flex justify-content-between">
+                                            <p class="align-self-center mb-0 text-sub-total">Sub Items Total... </p>
+                                            <i class="align-self-center fa-solid fa-pencil ml-1 mb-1 icon-edit"></i>
+                                        </a>
                                         <p class="card-price small total align-self-center text-right">$7.50</p>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="panel panel-default card">
-                    <div id="headingTwo" class="panel-heading " role="tab">
-                        <h6 class="panel-title">
-                            <div class="row margin-row">
-                                <div class="col-10 col-md-11 px-0 align-self-center">
-                                    <a role="button" >
-                                        <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
-                                    </a>
-                                </div>
-                                <div class="col-2 col-md-1 pl-0 pr-0 align-self-center text-right">
-                                    <button  class="btn btn-arrow-title" type="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                                    aria-expanded="true" aria-controls="collapseTwo">
-                                      <i class="fa-solid fa-angle-down icon-arrow-down"></i>
-                                    </button>
-                                   
-                                    <!-- <button id="btnExpandCollapse" class="btn btn-arrow-title" type="button"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <i class="fa-solid fa-angle-down icon-arrow-down"></i>
-                                        <i class="fa-solid fa-angle-up icon-arrow-up"></i>
-                                    </button> -->
-                                </div>
-                            </div>
-                        </h6>
-                        <div class="row row-flex mr-0">
-                            <div class="col-5" style="height: 100%">
-                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
-                                    height="auto" />
-                            </div>
-                            <div id="rightDetailFood" class="col-7 px-0 align-self-center rightDetailFood dont-show-line">
-                                <div class="d-flex justify-content-between right-content">
-                                    <p class="card-price align-self-center">$25.00</p>
-                                    <div class="align-self-center">
-                                        <div id="minusPlus" class="group-minus-plus">
-                                            <div class="d-flex justify-content-end align-items-center margin-right-back">
-                                                <button class="btn minus minus-plus" type="button">
-                                                    <i class="fas fa-minus-circle icon-grey-big"></i>
-                                                </button>
-                                                <input type="text" class="form-control quantity" id="" size="10"
-                                                    value="1">
-                                                <button class="btn plus minus-plus" type="button">
-                                                    <i class="fas fa-plus-circle icon-blue-big"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-
-
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
-                        aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            <div class="row m-0">
-                                <div class="col-12 padding-x align-self-center">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">8-oz</p>
-                                        <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus d-none">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn minus minus-plus" type="button">
-                                                        <i class="fas fa-minus-circle icon-grey"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
-                                                    <button class="btn plus minus-plus" type="button">
-                                                        <i class="fas fa-plus-circle icon-blue"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="card-price small align-self-center text-right">$3.50</p>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Well Done</p>
-                                        <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus d-none">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn minus minus-plus" type="button">
-                                                        <i class="fas fa-minus-circle icon-grey"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
-                                                    <button class="btn plus minus-plus" type="button">
-                                                        <i class="fas fa-plus-circle icon-blue"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="card-price small align-self-center text-right">--</p>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Girlled Onions</p>
-                                        <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn minus minus-plus" type="button">
-                                                        <i class="fas fa-minus-circle icon-grey"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
-                                                    <button class="btn plus minus-plus" type="button">
-                                                        <i class="fas fa-plus-circle icon-blue"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="card-price small align-self-center text-right">$1.50</p>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Sauteed Mushrooms</p>
-                                        <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn minus minus-plus" type="button">
-                                                        <i class="fas fa-minus-circle icon-grey"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
-                                                    <button class="btn plus minus-plus" type="button">
-                                                        <i class="fas fa-plus-circle icon-blue"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="card-price small align-self-center text-right">$2.50</p>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Texas Chili</p>
-                                        <div class="align-self-center">
-                                            <div id="minusPlus" class="group-minus-plus">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <button class="btn minus minus-plus" type="button">
-                                                        <i class="fas fa-minus-circle icon-grey"></i>
-                                                    </button>
-                                                    <input type="text" class="form-control quantity" id=""
-                                                        size="10" value="1">
-                                                    <button class="btn plus minus-plus" type="button">
-                                                        <i class="fas fa-plus-circle icon-blue"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="card-price small align-self-center text-right">$1.00</p>
-                                    </div>
-
-                                    <hr class="line-seperate" />
-
-                                    <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Sub Items Total</p>
-                                        <p class="card-price small total align-self-center text-right">$7.50</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-            
-            </div>
-        </div>
-
-
-
-
-        <p class="title-add-item">Add Items</p>
-        <div class="card no-shadow">
-            <ul class="horizontal-slide flex-wrap justify-content-start">
-                <li class="span2">
-                    <label class="radio">
-                        <input type="radio" name="p-type" value="Rare" checked>
-                        <div class="d-flex flex-column group-item justify-content-center">
-                            <span class="text-top">8-oz</span>
-                            <span class="text-bottom">$1.50</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="radio" name="p-type" value="Rare">
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top">9-oz</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="radio" name="p-type" value="Rare">
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top">10-oz</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="radio" name="p-type" value="Rare">
-                        <div class="d-flex flex-column group-item justify-content-center">
-                            <span class="text-top">11-oz</span>
-                            <span class="text-bottom">$1.50</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="radio" name="p-type" value="Rare">
-                        <div class="d-flex flex-column group-item justify-content-center">
-                            <span class="text-top">12-oz</span>
-                            <span class="text-bottom">$1.50</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="radio" name="p-type" value="Rare">
-                        <div class="d-flex flex-column group-item justify-content-center">
-                            <span class="text-top">12-oz</span>
-                            <span class="text-bottom">$1.50</span>
-                        </div>
-                    </label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="card no-shadow">
-            <ul class="multi-checkbox d-flex flex-wrap justify-content-between">
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Rare">
-                        <div class="d-flex flex-column group-item justify-content-center">
-                            <span class="text-top">Onion</span>
-                            <span class="text-bottom">$1.50</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Rare">
-                        <div class="d-flex flex-column group-item justify-content-center">
-                            <span class="text-top">Grill Onion</span>
-                            <span class="text-bottom">$1.50</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Rare">
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top align-self-center">Grill Onion Onion</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Medium rare" checked>
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top align-self-center">Grill Onion</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Medium">
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top align-self-center">Grill Onion</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Medium well">
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top align-self-center">Grill Onion</span>
-                        </div>
-                    </label>
-                </li>
-                <li class="span2">
-                    <label class="radio">
-                        <input type="checkbox" name="p-type" value="Well">
-                        <div class="d-flex flex-column item justify-content-center">
-                            <span class="text-top align-self-center">Grill Onion</span>
-                        </div>
-                    </label>
-                </li>
-            </ul>
-        </div>
-
-
-        <!-- Product Descriptions -->
-        <p class="title-add-item">Product Descriptions</p>
-        <div class="card no-shadow m-2">
-            <div class="row m-0">
-                <div class="col-12 p-0">
-                    <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci nesciunt
-                        voluptate aliquid sunt corrupti architecto ad, vel mollitia possimus nemo animi nobis, ratione
-                        rerum voluptates cupiditate reiciendis? Iste, ad fugiat.</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Customer request -->
-        <p class="title-add-item">Special Request</p>
-        <div class="card no-shadow m-2">
-            <div class="form-group">
-                <textarea class="form-control textarea" rows="3" placeholder="Special Request"></textarea>
             </div>
         </div>
 
@@ -529,13 +377,15 @@
         <!-- navbar fix bottom -->
         <nav class="navbar fixed-bottom navbar-light bg-light padding-bottom-bar shadow-top">
             <div class="d-flex justify-content-between align-self-center w-100 mx-2">
-                <button type="button" class="btn btn-add-to-order flex-fill m-1">
+                <button type="button" class="btn btn-add-to-order flex-fill my-1">
                     <div class="bg-inner">
                         <div class="content-btn">
                             <div class="d-flex flex-row group-item justify-content-between">
-                                <span class="text-empty align-self-center">$57.50</span>
-                                <span class="align-self-center">CONFIRM</span>
-                                <span class="text-price align-self-center">$57.50</span>
+                                <span class="text-empty align-self-center">00000</span>
+                                <span class="align-self-center">
+                                    <a href="my-order.html" class="text-white">PAY</a>
+                                </span>
+                                <span class="text-price align-self-center font-weight-lighter">$127.50</span>
                             </div>
                         </div>
                     </div>
@@ -564,21 +414,6 @@
     <script src="./js/cart.js"></script>
 
 
-    <script>
-        $(function () {
-            $(".panel").click(function () {
-                if ($('.panel').hasClass('active')) {
-                    $(this).removeClass("active");
-                    $(this).addClass("de-active");
-                    $(this).siblings(".panel-heading").addClass("de-active");
-                } else {
-                    $(this).removeClass("de-active");
-                    $(this).addClass("active");
-                    $(this).siblings('.panel-heading').addClass("active");
-                }
-            });
-        });
-    </script>
 
     <script>
         $(".btnAddDish").click(function () {
@@ -591,34 +426,69 @@
 
 
 
+    <!-- click button arrow will expand a div -->
     <script>
-        $('.panel-collapse').on('show.bs.collapse', function () {
-            $(this).siblings('.panel-heading').addClass('active');
+        $("#headingTwo").click(function () {
+            $('#collapseTwo').on('show.bs.collapse', function () {
+                $(this).siblings('.panel-heading').addClass('active');
+                $('#blueLine2').css("display", "flex");
+            });
+
+            $('#collapseTwo').on('hide.bs.collapse', function () {
+                $(this).siblings('.panel-heading').removeClass('active');
+                $('#blueLine2').css("display", "none");
+            });
         });
 
-        $('.panel-collapse').on('hide.bs.collapse', function () {
-            $(this).siblings('.panel-heading').removeClass('active');
+        $("#headingOne").click(function () {
+            $('#collapseOne').on('show.bs.collapse', function () {
+                $(this).siblings('.panel-heading').addClass('active');
+                $('#blueLine').css("display", "flex");
+            });
+
+            $('#collapseOne').on('hide.bs.collapse', function () {
+                $(this).siblings('.panel-heading').removeClass('active');
+                $('#blueLine').css("display", "none");
+            });
+        });
+
+    </script>
+
+
+    <!-- border when click a panel -->
+    <script>
+        $(function () {
+            $(".panel").click(function () {
+                if ($('.panel').hasClass('active')) {
+                    $(this).removeClass("active");
+                    $(this).addClass("de-active");
+                } else {
+                    $(this).removeClass("de-active");
+                    $(this).addClass("active");
+                }
+            });
         });
     </script>
 
-    <script>
+
+    <!-- <script>
         $(".btn-arrow-title").click(function () {
-            if ($('.rightDetailFood').hasClass('dont-show-line')) {
-                $('.rightDetailFood').removeClass('dont-show-line');
-                $('.rightDetailFood').addClass('show-line');
+            if ($('.right-detail-food').hasClass('dont-show-line')) {
+                $('.right-detail-food').removeClass('dont-show-line');
+                $('.right-detail-food').addClass('show-line');
 
                 // $('.icon-arrow-down').css("display", "none");
                 // $('.icon-arrow-up').css("display", "block");
 
             } else {
-                $('.rightDetailFood').removeClass('show-line');
-                $('.rightDetailFood').addClass('dont-show-line')
+                $('.right-detail-food').removeClass('show-line');
+                $('.right-detail-food').addClass('dont-show-line')
 
                 // $('.icon-arrow-down').css("display", "block");
                 // $('.icon-arrow-up').css("display", "none");
             }
         });
-    </script>
+    </script> -->
 
 </body>
 
