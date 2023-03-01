@@ -223,6 +223,7 @@ a:focus , a:hover{
 
 .svg-inline--fa {
     vertical-align: -0.2em;
+    margin-top: 1px;
 }
 
 
@@ -713,8 +714,9 @@ button:focus {
 
 .sub-items .card-price {
     font-size: 20px;
-    color: #383838;
+     color: #0E61C3;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .sub-items .card-price.small {
@@ -747,14 +749,18 @@ button:focus {
 .sub-items .card-price.small.total {
     color: #0E61C3;
     font-size: 18px;
+    padding: 5px 0 5px 0;
 }
 
 .sub-items .btn {
-    padding: 0.09rem 0.9rem;
+    padding: 0.3rem 0.9rem 0.1rem 0.9rem;
 }
 
 .sub-items .btn-add-to-order {
     padding: 1px 2px 2px 2px;
+}
+.panel-title{
+    margin-bottom: 0.5rem;
 }
 .icon-arrow-up{
     display: none ;
@@ -769,6 +775,7 @@ button:focus {
 
 .row-flex .card-price {
     height: 100%;
+    padding: 2px 0;
 }
 
 .row-flex {
@@ -847,7 +854,7 @@ button:focus {
 }
 
 .sub-items .line-seperate {
-    margin: 0.5rem 0;
+    margin: 0.3rem 0;
     border-top: 1px solid #bad1e5;
 }
 
@@ -901,6 +908,11 @@ button:focus {
 
     padding: 8px 0;
 }
+.sub-items .name-item.total {
+    padding: 5px 0 5px 0;
+    font-size: 18px;
+    font-weight: normal;
+}    
 
 .text-sub-total{
     color: #333;
