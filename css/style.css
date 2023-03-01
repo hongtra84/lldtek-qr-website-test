@@ -1132,6 +1132,39 @@ input[type="checkbox"]:focus {
     color: #2874ef;
 }
 
+/* receipt */
+.receipt .panel-title{
+    margin-bottom: 0;
+}
+.receipt .title-card-item{
+    color: #0E61C3;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #0E61C3;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.title-receipt .icon-big-blue{
+    color: #0E61C3;
+    font-size: 24px;
+}
+.title-receipt h5{
+    color: #0E61C3;
+    margin-bottom: 0;
+    font-style: italic;
+    padding: 10px 0;
+}
+.item-left{
+    color: #777;
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+
+.item-right{
+    color: #383838;
+    margin-bottom: 0;
+    padding: 5px 0;
+}
 
 
 
