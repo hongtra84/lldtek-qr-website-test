@@ -251,7 +251,7 @@ a:focus , a:hover{
     color: #0E61C3;
     font-weight: 500;
     font-size: 18px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    /* box-shadow: 0 3px 3px rgba(0, 0, 0, .2); */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #AF7515), color-stop(0.5, #E0C98B), color-stop(0.9, #F7E196), color-stop(1, #AF7515));
     padding: 1px 1px 2px 1px;
     /* change border here */
@@ -312,7 +312,7 @@ a:focus , a:hover{
 }
 
 .btn-add-to-order .bg-inner .content-btn {
-    padding: 10px 15px 11px 15px;
+    padding: 11px 15px 11px 15px;
     /* change padding fit content */
     background-image: linear-gradient(#008cff, #002C60);
     border-radius: 15px;
@@ -813,6 +813,10 @@ button:focus {
     padding: 0;
     margin-top: -0.3rem;
 }
+.right-content-bottom {
+    padding: 0;
+    margin-bottom: -4px;
+}
 
 .margin-right-back {
     margin-right: -1.9rem;
@@ -915,7 +919,7 @@ button:focus {
 }    
 
 .text-sub-total{
-    color: #333;
+    color: #383838;
 }
 
 
@@ -947,7 +951,7 @@ button:focus {
     text-decoration: none;
 }
 .padding-x{
-    padding: 0 12px 10px 12px;
+    padding: 0 12px 8px 12px;
 }
 .fa-long-arrow-down:before {
     content: "\f175"; 

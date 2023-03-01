@@ -4,7 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -33,7 +34,7 @@
                 <div class="dropdown-menu menu-right">
                     <button class="dropdown-item" type="button">Waiter</button>
                     <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here</button>
+                    <button class="dropdown-item" type="button">Something else here ...</button>
                 </div>
             </div>
         </div>
@@ -48,7 +49,7 @@
                             <div class="row margin-row">
                                 <div class="col-12 col-md-11 px-0 align-self-center">
                                     <a role="button">
-                                        <h6 class="card-title">Hand-cut Ribeye text expanded here</h6>
+                                        <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
                                     </a>
                                 </div>
                             </div>
@@ -69,7 +70,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between right-content-bottom">
                                     <div class="align-self-center">
                                         <div id="minusPlus" class="group-minus-plus  margin-left-back">
                                             <div class="d-flex justify-content-start align-items-center">
@@ -194,7 +195,10 @@
                                     <hr class="line-seperate" />
 
                                     <div class="d-flex justify-content-between">
-                                        <p class="align-self-center mb-0 name-item">Sub Items Total</p>
+                                        <a href="sub-items.html" class="d-flex justify-content-between">
+                                            <p class="align-self-center mb-0 text-sub-total">Sub Items Total... </p>
+                                            <i class="align-self-center fa-solid fa-pencil ml-1 mb-1 icon-edit"></i>
+                                        </a>
                                         <p class="card-price small total align-self-center text-right">$7.50</p>
                                     </div>
 
@@ -211,19 +215,19 @@
                             <div class="row margin-row">
                                 <div class="col-12 col-md-11 px-0 align-self-center">
                                     <a role="button">
-                                        <h6 class="card-title">Hand-cut Ribeye text expanded here</h6>
+                                        <h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
                                     </a>
                                 </div>
                             </div>
                         </h6>
                         <div class="row row-flex mr-0">
                             <div class="col-5">
-                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
+                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-02.jpg" width="auto"
                                     height="auto" />
                             </div>
                             <div class="col-7 px-0 d-flex flex-column justify-content-between right-detail-food">
                                 <div class="d-flex justify-content-between right-content-top">
-                                    <p class="card-price small align-self-center">$25.00</p>
+                                    <p class="card-price small-top align-self-center">$25.00</p>
                                     <div class="align-self-center">
                                         <button class="btn btn-arrow-title right" type="button" data-toggle="collapse"
                                             data-parent="#accordion" href="#collapseTwo" aria-expanded="true"
@@ -232,7 +236,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between right-content-bottom">
                                     <div class="align-self-center">
                                         <div id="minusPlus" class="group-minus-plus  margin-left-back">
                                             <div class="d-flex justify-content-start align-items-center">
@@ -249,7 +253,7 @@
                                     </div>
                                     <p class="card-price align-self-center">$33.00</p>
                                 </div>
-                                <div id="blueLine2" class="row blue-line2 blue-line"></div>
+                                <div id="blueLine2" class="row blue-line1 blue-line"></div>
                             </div>
                             <hr>
                         </div>
@@ -362,6 +366,7 @@
                                         </a>
                                         <p class="card-price small total align-self-center text-right">$7.50</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -428,44 +433,76 @@
         $("#headingTwo").click(function () {
             $('#collapseTwo').on('show.bs.collapse', function () {
                 $(this).siblings('.panel-heading').addClass('active');
+
+                if ($(this).parent('.panel').hasClass("active")) {
+                    $(this).parent('.panel').removeClass("active");
+                } else {
+                    $(this).parent('.panel').addClass("active");
+                }
                 $('#blueLine2').css("display", "flex");
             });
 
             $('#collapseTwo').on('hide.bs.collapse', function () {
                 $(this).siblings('.panel-heading').removeClass('active');
+
+                $(this).parent('.panel').removeClass("active");
                 $('#blueLine2').css("display", "none");
             });
         });
 
+
         $("#headingOne").click(function () {
             $('#collapseOne').on('show.bs.collapse', function () {
                 $(this).siblings('.panel-heading').addClass('active');
+
+                if ($(this).parent('.panel').hasClass("active")) {
+                    $(this).parent('.panel').removeClass("active");
+                } else {
+                    $(this).parent('.panel').addClass("active");
+                }
                 $('#blueLine').css("display", "flex");
             });
 
             $('#collapseOne').on('hide.bs.collapse', function () {
                 $(this).siblings('.panel-heading').removeClass('active');
+
+                $(this).parent('.panel').removeClass("active");
                 $('#blueLine').css("display", "none");
             });
         });
+
+
+
+        // $("#headingOne").click(function () {
+        //     $('#collapseOne').on('show.bs.collapse', function () {
+        //         $(this).siblings('.panel-heading').addClass('active');
+        //         $('#blueLine').css("display", "flex");
+        //     });
+
+        //     $('#collapseOne').on('hide.bs.collapse', function () {
+        //         $(this).siblings('.panel-heading').removeClass('active');
+        //         $('#blueLine').css("display", "none");
+        //     });
+        // });
 
     </script>
 
 
     <!-- border when click a panel -->
-    <script>
+    <!-- <script>
         $(function () {
             $(".panel").click(function () {
                 if ($('.panel').hasClass('active')) {
                     $(this).removeClass("active");
                     $(this).addClass("de-active");
+
                 } else {
                     $(this).removeClass("de-active");
                     $(this).addClass("active");
                 }
             });
         });
-    </script>
+    </script> -->
 
 
     <!-- <script>
