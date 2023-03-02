@@ -2,6 +2,7 @@
 html {
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behaviour : smooth;
 
     -webkit-text-size-adjust: none;
 	touch-action: manipulation;
@@ -648,7 +649,7 @@ button:focus {
     border: 1px solid #eee;
     border-radius: 10px !important;
     padding: 0;
-    margin: 15px 10px !important;
+    margin: 1rem 1rem !important;
     box-shadow: 0 0 4px rgb(87 87 87 / 50%);
     /* border-color: #EBF6FF; */
     background: #fff;
@@ -961,9 +962,9 @@ button:focus {
 }
 
 .panel-heading.active .btn-arrow-title {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(180deg);         /* use rotate arrow */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);         /* use rotate arrow */
 }
 
 .panel-heading .btn-arrow-title.right {
