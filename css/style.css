@@ -65,7 +65,7 @@ a:focus , a:hover{
 
 .title-bar {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
     margin-right: 0;
     padding-bottom: 0;
     padding-top: 0.1rem;
@@ -482,7 +482,7 @@ a:focus , a:hover{
 
 .sub-items {
     padding: 0;
-    margin-bottom: 78px;
+    margin-bottom: 70px;
 }
 
 
@@ -507,7 +507,7 @@ ul.horizontal-slide li[class*="span"]:first-child {
 
 /* multi-checkbox */
 ul.multi-checkbox {
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
 
@@ -649,21 +649,32 @@ button:focus {
     border: 1px solid #eee;
     border-radius: 10px !important;
     padding: 0;
-    margin: 1rem 1rem !important;
+    /* margin: 1rem 1rem !important; */
     box-shadow: 0 0 4px rgb(87 87 87 / 50%);
     /* border-color: #EBF6FF; */
     background: #fff;
     border-color: #fff;
 }
 
-.sub-items .card.active {
+.sub-items .panel.active .card {
     border: 1px solid #0d59b5;
     background: #EBF6FF;
 }
-.sub-items .card.active .panel-heading.active {
+.card.active {
     background: #EBF6FF;
+    border:  1px solid #0d59b5;
 }
-.sub-items .card.active .panel-heading.de-active {
+.card.active .right-detail-food{
+    justify-content: space-between !important;
+}
+
+.card .blue-line{
+    display: none;
+}
+.card.active .blue-line{
+    display: flex;
+}
+.sub-items .panel.active .panel-heading.de-active {
     background: transparent;
 }
 .panel-collapse.show{
@@ -679,6 +690,9 @@ button:focus {
 .sub-items .card.no-shadow.active {
     box-shadow: 0;
     border: none;
+}
+.card-no-shadow{
+    padding: 0.5rem 1rem;
 }
 .sub-items .card.no-shadow {
     box-shadow: 0 0 1px rgb(87 87 87 / 50%);
@@ -869,10 +883,10 @@ button:focus {
 .title-add-item {
     color: #0E61C3;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     border-bottom: 1px solid #0E61C3;
     padding: 15px 10px 5px 10px;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0;
 }
 
 .card .form-group {
@@ -961,7 +975,7 @@ button:focus {
     content: "\f175"; 
 }
 
-.panel-heading.active .btn-arrow-title {
+.card.active .btn-arrow-title {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);         /* use rotate arrow */
@@ -974,7 +988,7 @@ button:focus {
     margin-right: -0.7rem;
 }
 
-.panel-heading.active .btn-arrow-title.right {
+.card.active .btn-arrow-title.right {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     transform: rotate(90deg);         /* use rotate arrow */
@@ -1134,14 +1148,17 @@ input[type="checkbox"]:focus {
 }
 
 /* receipt */
+.receipt p{
+    margin-bottom: 0;
+}
 .receipt .panel-title{
     margin-bottom: 0;
 }
 .receipt .title-card-item{
     color: #0E61C3;
     font-weight: bold;
-    font-size: 16px;
-    border-bottom: 1px solid #0E61C3;
+    font-size: 18px;
+    border-bottom: 1px solid #a5a5a5;
     padding: 0.75rem 1rem;
     margin-bottom: 0;
 }
@@ -1155,21 +1172,60 @@ input[type="checkbox"]:focus {
     font-style: italic;
     padding: 10px 0;
 }
-.item-left{
-    color: #777;
+.receipt .title-order .item-left{
+    color: #0E61C3;
     margin-bottom: 0;
     padding: 5px 0;
     text-transform: capitalize;
+    font-size: 18px;
+    line-height: 1.2;
 }
-
+.item-left.width{
+    width: calc(60% - 1rem);
+}
+.color-blue{
+    color: #0E61C3 !important;
+}
+.item-blue{
+    color: #0E61C3;
+    width: 60%;
+}
 .item-right{
     color: #383838;
     margin-bottom: 0;
     padding: 5px 0;
 }
-
-
-
+.sub-item .item-left, .sub-item .item-middle,
+.sub-item .item-right{
+    font-size: 16px;
+    padding: 5px 0;
+}
+.title-order .item-left, .title-order .item-middle, .title-order .item-right{
+    font-size: 18px;
+}
+.receipt .sub-item{
+    padding-left: 1rem;
+}
+.border-bottom-grey{
+    border-bottom: 1px solid #d7d7d7;
+}
+.item-price{
+    width: 20%;
+    text-align: right;
+}
+.text-price.text-normal{
+    font-weight: 400;
+}
+.color-red{
+    color: red !important;
+}
+.pmt-summary .item-left.color-grey{
+    color: #383838 !important;
+}
+.total-order p{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 
