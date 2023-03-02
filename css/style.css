@@ -1141,7 +1141,7 @@ input[type="checkbox"]:focus {
     font-weight: bold;
     font-size: 16px;
     border-bottom: 1px solid #0E61C3;
-    padding: 10px;
+    padding: 0.75rem 1rem;
     margin-bottom: 0;
 }
 .title-receipt .icon-big-blue{
