@@ -21,27 +21,29 @@
 <body>
     <!-- navbar fix top-->
     <nav class="navbar sticky-top navbar-top bg-blue">
-        <div class="d-flex justify-content-between align-self-center w-100">
-            <button class="btn" type="button" onclick="location.href='index.html'">
-                <i class="fa-solid fa-angle-left icon-white"></i>
-            </button>
-
-            <a class="navbar-brand title-bar" href="#">Sub Items</a>
-            <div class="dropdown">
-
-                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-list-ul icon-white"></i>
+        <div class="container-fluid container-md px-0">
+            <div class="d-flex justify-content-between align-self-center w-100">
+                <button class="btn" type="button" onclick="location.href='index.html'">
+                    <i class="fa-solid fa-angle-left icon-white"></i>
                 </button>
-                <div class="dropdown-menu menu-right">
-                    <button class="dropdown-item" type="button">Waiter</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here ...</button>
+
+                <a class="navbar-brand title-bar" href="#">Sub Items</a>
+                <div class="dropdown">
+
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-list-ul icon-white"></i>
+                    </button>
+                    <div class="dropdown-menu menu-right">
+                        <button class="dropdown-item" type="button">Waiter</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here ...</button>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container sub-items">
+    <div class="container-md sub-items">
         <div class="panel-group py-2" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default px-3 py-2">
                 <div class="card">
@@ -533,30 +535,32 @@
 
         <!-- navbar fix bottom -->
         <nav class="navbar fixed-bottom navbar-light bg-light padding-bottom-bar shadow-top">
-            <div class="d-flex justify-content-between align-self-center w-100 mx-2">
-                <button type="button" class="btn btn-add-to-order flex-fill my-2 mx-2">
-					<div class="bg-inner">
-                        <div class="content-btn">
-                            <div class="d-flex flex-row group-item justify-content-between">
-                                <span class="text-empty align-self-center">$00.00</span>
-                                <span class="align-self-center">
-                                    <a href="my-order.html" class="text-white">CONFIRM</a>
-                                </span>
-                                <span class="text-price align-self-center text-normal">$57.50</span>
+            <div class="container-fluid container-md px-0">
+                <div class="d-flex justify-content-between justify-button-single align-self-center w-100 mx-2">
+                    <button type="button" class="btn btn-add-to-order btn-big my-2 mx-2">
+                        <div class="bg-inner">
+                            <div class="content-btn">
+                                <div class="d-flex flex-row group-item justify-content-between">
+                                    <span class="text-empty align-self-center">$00.00</span>
+                                    <span class="align-self-center">
+                                        <a href="my-order.html" class="text-white">CONFIRM</a>
+                                    </span>
+                                    <span class="text-price align-self-center text-normal">$57.50</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-				</button>
-		    </div>
+                    </button>
+                </div>
 
-            <!-- Float button -->
-            <div class="floating-button">
-                <button type="button" class="btn btn-floating flex-fill m-2">
-                    <i class="fa-solid fa-phone icon-white-big mr-1 align-self-center"></i>
-                    <!-- <i class="fa-solid fa-bowl-food"></i> -->
-                </button>
-            </div>
+                <!-- Float button -->
+                <div class="floating-button">
+                    <button type="button" class="btn btn-floating flex-fill m-2">
+                        <i class="fa-solid fa-phone icon-white-big mr-1 align-self-center"></i>
+                        <!-- <i class="fa-solid fa-bowl-food"></i> -->
+                    </button>
+                </div>
         </nav>
+    </div>
     </div>
 
 
@@ -679,7 +683,7 @@
         $(function () {
             $(".panel").click(function () {
                 if ($('.panel').hasClass('active')) {
-                    alert('panel de-active')
+                    // alert('panel de-active')
                     $(this).removeClass("active");
                     $(this).addClass("de-active");
                 } else {

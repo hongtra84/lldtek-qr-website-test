@@ -23,31 +23,33 @@
 <body>
     <!-- navbar fix top-->
     <nav class="navbar sticky-top navbar-top bg-blue">
-        <div class="d-flex justify-content-between align-self-center w-100">
-            <button class="btn" type="button" onclick="location.href='index.html'">
-                <i class="fa-solid fa-angle-left icon-white"></i>
-            </button>
-
-            <a class="navbar-brand title-bar" href="#">Order Receipt</a>
-            <div class="dropdown opacity-0">
-
-                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-list-ul icon-white"></i>
+        <div class="container-fluid container-md px-0">
+            <div class="d-flex justify-content-between align-self-center w-100">
+                <button class="btn" type="button" onclick="location.href='index.html'">
+                    <i class="fa-solid fa-angle-left icon-white"></i>
                 </button>
-                <div class="dropdown-menu menu-right">
-                    <button class="dropdown-item" type="button">Waiter</button>
-                    <button class="dropdown-item" type="button">Another action</button>
-                    <button class="dropdown-item" type="button">Something else here ...</button>
+
+                <a class="navbar-brand title-bar" href="#">Order Receipt</a>
+                <div class="dropdown opacity-0">
+
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-list-ul icon-white"></i>
+                    </button>
+                    <div class="dropdown-menu menu-right">
+                        <button class="dropdown-item" type="button">Waiter</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here ...</button>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid sub-items receipt">
+    <div class="container-fluid container-md sub-items receipt">
         <div class="row mt-3 mx-0">
             <div class="col-12 d-flex justify-content-center title-receipt">
                 <i class="fa-solid fa-circle-check icon-big-blue align-self-center"></i>
-                <h5 class="align-self-center ml-2">Thank you for your order !</h5>
+                <h4 class="align-self-center ml-2">Thank you for your order!</h4>
             </div>
         </div>
         <div class="panel-group py-2" id="accordion" role="tablist" aria-multiselectable="true">
@@ -56,7 +58,7 @@
                     <div class="panel-heading p-0" role="tab">
                         <h6 class="panel-title">
                             <div class="row m-0">
-                                <div class="col-12 col-md-11 px-0 align-self-center">
+                                <div class="col-12 col-md-12 px-0 align-self-center">
                                     <p class="title-card-item">Payment Summary</p>
                                 </div>
                             </div>
@@ -107,7 +109,7 @@
                     <div class="panel-heading p-0" role="tab">
                         <h6 class="panel-title">
                             <div class="row m-0">
-                                <div class="col-12 col-md-11 px-0 align-self-center">
+                                <div class="col-12 col-md-12 px-0 align-self-center">
                                     <p class="title-card-item">Order Summary</p>
                                 </div>
                             </div>
@@ -125,7 +127,7 @@
                                     <div class="sub-item">
                                         <div class="d-flex justify-content-between">
                                             <p class="item-left align-self-center width">8-oz</p>
-                                            <p class="item-middle align-self-center d-none">1</p>
+                                            <p class="item-middle align-self-center">1</p>
                                             <p class="item-right align-self-center item-price">$12.00</p>
                                         </div>
                                         <div class="d-flex justify-content-between">
@@ -162,12 +164,11 @@
                             </div>
 
                             <div class="row row-flex m-0 px-3">
-                                <div
-                                    class="col-12 py-2 px-0 border-bottom-grey">
+                                <div class="col-12 py-2 px-0 border-bottom-grey">
                                     <div class="d-flex justify-content-between title-order">
                                         <p class="item-left item-blue align-self-center width">NY Strip steak</p>
                                         <p class="item-middle align-self-center">1</p>
-                                        <p class="item-right align-self-center">$33.00</p>
+                                        <p class="item-right align-self-center">$383.00</p>
                                     </div>
                                     <div class="sub-item">
                                         <div class="d-flex justify-content-between">
@@ -243,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -251,29 +252,31 @@
 
         <!-- navbar fix bottom -->
         <nav class="navbar fixed-bottom navbar-light bg-light padding-bottom-bar shadow-top">
-            <div class="d-flex justify-content-between align-self-center w-100 mx-2">
-				<button type="button" class="btn btn-add-to-order flex-fill my-2 mx-2 w-50">
-					<div class="bg-inner">
-						<div class="content-btn">
-							<a href="index.html" class="text-white">Re-Order</a>
-						</div>
-					</div>
-				</button>
-				<button type="button" class="btn btn-add-to-order flex-fill my-2 mx-2 w-50">
-					<div class="bg-inner">
-						<div class="content-btn">
-							<a href="" class="text-white">Email Receipt</a>
-						</div>
-					</div>
-				</button>
-		</div>
+            <div class="container-fluid container-md px-0">
+                <div class="d-flex justify-content-between justify-button-double align-self-center w-100 mx-2">
+                    <button type="button" class="btn btn-add-to-order my-2 mx-2 w-50">
+                        <div class="bg-inner">
+                            <div class="content-btn">
+                                <a href="index.html" class="text-white">Re-Order</a>
+                            </div>
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn-add-to-order my-2 mx-2 w-50">
+                        <div class="bg-inner">
+                            <div class="content-btn">
+                                <a href="" class="text-white">Email Receipt</a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
 
-            <!-- Float button -->
-            <div class="floating-button">
-                <button type="button" class="btn btn-floating flex-fill m-2">
-                    <i class="fa-solid fa-phone icon-white-big mr-1 align-self-center"></i>
-                    <!-- <i class="fa-solid fa-bowl-food"></i> -->
-                </button>
+                <!-- Float button -->
+                <div class="floating-button">
+                    <button type="button" class="btn btn-floating flex-fill m-2">
+                        <i class="fa-solid fa-phone icon-white-big mr-1 align-self-center"></i>
+                        <!-- <i class="fa-solid fa-bowl-food"></i> -->
+                    </button>
+                </div>
             </div>
         </nav>
     </div>
