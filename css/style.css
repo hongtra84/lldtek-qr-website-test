@@ -111,7 +111,7 @@ a:focus , a:hover{
 /* card */
 .margin-cards {
     margin-top: 44px;
-    margin-bottom: 58px;
+    margin-bottom: 70px;
 }
 
 .details {
@@ -146,6 +146,7 @@ a:focus , a:hover{
     border-bottom-right-radius: 0 0;
     padding: 0;
     border: none;
+    width: 100%;
 }
 
 .card {
@@ -482,7 +483,7 @@ a:focus , a:hover{
 
 .sub-items {
     padding: 0;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 
