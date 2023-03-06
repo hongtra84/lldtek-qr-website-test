@@ -59,7 +59,7 @@
                         </h6>
                         <div class="row mr-0">
                             <div class="col-5">
-                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-01.jpg" width="auto"
+                                <img class='mx-auto img-thumbnail normal-radius' src="./images/food-00.jpg" width="auto"
                                     height="auto" />
                             </div>
                             <div class="col-7 px-0 d-flex flex-column justify-content-between right-detail-food">
@@ -75,12 +75,12 @@
                                 </div>
                                 <div class="d-flex justify-content-between right-content-bottom">
                                     <div class="align-self-center">
-                                        <div id="minusPlus" class="group-minus-plus  margin-left-back">
+                                        <div id="minusPlus" class="group-minus-plus margin-left-back">
                                             <div class="d-flex justify-content-start align-items-center">
-                                                <button class="btn minus minus-plus" type="button">
+                                                <button id="btnAddDish" class="btn minus minus-plus" type="button">
                                                     <i class="fas fa-minus-circle icon-grey-big"></i>
                                                 </button>
-                                                <input type="text" class="form-control quantity" id="" size="10"
+                                                <input type="text" class="form-control quantity" id="quantity" size="10"
                                                     value="1">
                                                 <button class="btn plus minus-plus" type="button">
                                                     <i class="fas fa-plus-circle icon-blue-big"></i>
@@ -90,7 +90,7 @@
                                     </div>
                                     <p class="card-price align-self-center">$33.00</p>
                                 </div>
-                                <div id="blueLine" class="row blue-line1 blue-line"></div>
+                                <div  class="row blue-line"></div>
                             </div>
                             <hr>
                         </div>
@@ -258,7 +258,7 @@
                                     </div>
                                     <p class="card-price align-self-center">$33.00</p>
                                 </div>
-                                <div id="blueLine2" class="row blue-line1 blue-line"></div>
+                                <div class="row blue-line"></div>
                             </div>
                         </div>
                     </div>
@@ -424,11 +424,18 @@
 
 
     <script>
-        $(".btnAddDish").click(function () {
-            $(".minus-Plus").addClass("d-block");
-            alert('btn ne');
-        });
+        $(".minus-plus").click(function () {
+                var valueElement = $('#' + $(this).siblings('input').attr('id'));
 
+                if ($(this).hasClass('plus')) {
+                    valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
+                }
+                else if (valueElement.val() > 0) // Stops the value going into negatives
+                {
+                    valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
+                }
+                return false;
+        });
     </script>
 
 
@@ -436,40 +443,20 @@
 
 
     <script>
-        $("#headingOne").click(function () {
-            $('#collapseOne').on('show.bs.collapse', function () {
-                // $(this).parent('.card').addClass('active');
+        $('#collapseOne').on('show.bs.collapse', function () {
+            $(this).parent('.card').addClass("active");
+        });
 
-                if ($(this).parent('.card').hasClass("active")) {
-                    $(this).parent('.card').removeClass("active");
-                    // $('#blueLine').css("display", "flex");
-                } else {
-                    $(this).parent('.card').addClass("active");
-                }
-
-            });
-
-            $('#collapseOne').on('hide.bs.collapse', function () {
-                $(this).siblings('.card').removeClass('active');
-
-                $(this).parent('.card').removeClass("active");
-                // $('#blueLine').css("display", "none");
-            });
+        $('#collapseOne').on('hide.bs.collapse', function () {
+            $(this).parent('.card').removeClass("active");
         });
 
         $("#headingTwo").click(function () {
             $('#collapseTwo').on('show.bs.collapse', function () {
-                if ($(this).parent('.card').hasClass("active")) {
-                    $(this).parent('.card').removeClass("active");
-                } else {
-                    $(this).parent('.card').addClass("active");
-                }
-
+                $(this).parent('.card').addClass("active");
             });
 
             $('#collapseTwo').on('hide.bs.collapse', function () {
-                $(this).siblings('.card').removeClass('active');
-
                 $(this).parent('.card').removeClass("active");
             });
         });

@@ -26,6 +26,7 @@ body {
 
 .btn {
     border: none;
+    position: relative;
     /* padding: 0.75rem; */
 }
 
@@ -46,6 +47,22 @@ a:focus , a:hover{
     box-shadow: none;
 }
 
+/* navbar Scrollspy */
+.scrollspy-categories {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    padding: 1rem;
+    margin-top: 50px;
+}
+.title-category{
+    color: #0E61C3;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #0E61C3;
+    padding: 15px 1rem 5px 1rem;
+    margin-bottom: 0;
+}
 /* navbar */
 .services-bar .nav {
     overflow-x: scroll;
@@ -164,6 +181,10 @@ a:focus , a:hover{
     font-weight: 500;
     margin-bottom: .25rem;
     padding-right: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-description {
@@ -172,10 +193,8 @@ a:focus , a:hover{
     text-align: left;
     margin-bottom: 0;
     line-height: 1.1;
-    padding-right: 10px;
 
     /* truncate */
-    width: 146px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -255,7 +274,7 @@ a:focus , a:hover{
 
 .btn-my-order {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 50px;
     color: #0E61C3;
     font-weight: 500;
     font-size: 18px;
@@ -266,15 +285,15 @@ a:focus , a:hover{
 
 .btn-my-order .bg-inner {
     background: #fff;
-    border-radius: 15px;
+    border-radius: 50px;
     padding: 0 0 0 0;
 }
 
 .btn-my-order .bg-inner .content-btn {
-    padding: 7px 1px 7px 1px;
+    padding: 7px 1px 8px 1px;
     /* change padding fit content */
     background: #fff;
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 
@@ -297,7 +316,7 @@ a:focus , a:hover{
 
 .btn-add-to-order {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 50px;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
@@ -309,26 +328,26 @@ a:focus , a:hover{
 
 
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #AF7515), color-stop(0.5, #F7E196), color-stop(1, #AF7515));
-    padding: 1px 2px 1px 2px; /* change border here */
+    padding: 1px 1px 2px 1px; /* change border here */
 }
 
 .btn-add-to-order .bg-inner {
     /* background-image: linear-gradient(#0061C1, #001F4C); */
 
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 .btn-add-to-order .bg-inner .content-btn {
-    padding: 11px 15px 11px 15px;
+    padding: 10px 15px 12px 15px;
     /* change padding fit content */
     background-image: linear-gradient(#008cff, #002C60);
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 .btn-add-to-order:hover .bg-inner .content-btn,
 .btn-add-to-order:focus .bg-inner .content-btn {
-    background-image: linear-gradient(#001F4C, #0061C1);
-    border-radius: 15px;
+    background-image: linear-gradient(#002C60, #008cff);
+    border-radius: 50px;
     color: #fff;
 }
 
@@ -675,11 +694,18 @@ button:focus {
 }
 
 .card .blue-line{
-    display: none;
+    border-top: 1px solid transparent;
+    margin: 0.5rem 0 0 0;
+}
+.card .blue-line-empty{
+    border-top: 1px solid transparent;
+    margin: 0 0 0.5rem 0;
 }
 .card.active .blue-line{
-    display: flex;
+    border-color:  #bad1e5;
 }
+
+
 .sub-items .panel.active .panel-heading.de-active {
     background: transparent;
 }
@@ -824,11 +850,7 @@ button:focus {
 .opacity-0{
     opacity: 0 !important;
 }
-.blue-line{
-    display: none;
-    border-bottom: 1px solid #bad1e5;
-    margin: 1rem 0 0 0;
-}
+
 .right-content {
     padding: 0;
     margin-right: 1rem;
@@ -1249,6 +1271,9 @@ input[type="checkbox"]:focus {
     }
     .navbar.fixed-bottom .scale-width{
         justify-content: space-around !important;
+    }
+    .btn-add-to-order.btn-big{
+        flex: 0 0 auto;
     }
     .btn-my-order, .btn-add-to-order{
         width: 50%;
