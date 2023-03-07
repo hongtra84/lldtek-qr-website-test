@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="HandheldFriendly" content="true">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<link href="./css/font-awesome.css" type="text/css">
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<title>Login</title>
+</head>
+
+<body class="light login">
+
+	<div class="container top-login">
+
+		<div class="d-flex justify-content-between flex-column h-100 py-5">
+			<h4 class="welcome">Welcome to</h4>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam architecto at consectetur tenetur in dolorum minus corporis! Aperiam asperiores ut sint esse sapiente deserunt dolores aut quidem, sed neque libero.</p>
+			<div class="group-button">
+				<button>aaaaa</button>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+
+	<div class="powered-by">
+		<img src="./images/powered-by.png" alt="">
+	</div>
+
+
+
+
+
+	<!-- Js -->
+	<script src="./js/jquery.slim.min.js"></script>
+	<script src="./js/bootstrap.bundle.js"></script>
+
+	<script src="./js/font-awesome.js"></script>
+	<script src="./js/cart.js"></script>
+
+
+	<!-- scrollspy -->
+	<script>
+		window.onload = function () {
+			$('body').scrollspy({
+				target: '#navbarCategories',
+				offset: 140,
+			})
+			
+			$(".nav-link:first").addClass('active');
+			$(".nav-link:last").removeClass('active');
+
+			// scroll to back will active at first element
+			const heightOfScrollOne = document.getElementById('scrollOne').clientHeight;
+			console.log(heightOfScrollOne);
+			window.addEventListener("scroll", () => {
+				if (window.scrollY < heightOfScrollOne) {
+					$(".nav-link:first").addClass('active');
+				}
+			});
+		}
+
+	</script>
+
+	<script>
+		$(".minus-plus").click(function () {
+			var valueElement = $('#' + $(this).siblings('input').attr('id'));
+
+			if ($(this).hasClass('plus')) {
+				valueElement.val(Math.max(parseInt(valueElement.val()) + 1));
+			}
+			else if (valueElement.val() > 0) // Stops the value going into negatives
+			{
+				valueElement.val(Math.max(parseInt(valueElement.val()) - 1));
+			}
+			return false;
+		});
+	</script>
+
+	<script>
+		$("#btnAddDish").click(function () {
+			$(this).addClass("d-none");
+			$("#minusPlus").addClass("d-block");
+		});
+	</script>
+
+</body>
+
+</html>

@@ -12,6 +12,13 @@ body {
     min-height: 20rem;
     background-color: #fff;
     font-family: myFirstFont;
+    position: relative;
+}
+body.light{
+    background-color: #fff !important;
+}
+body.dark{
+    background-color: #001E2D !important;
 }
 
 @font-face {
@@ -48,11 +55,16 @@ a:focus , a:hover{
 }
 
 /* navbar Scrollspy */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+}
 .scrollspy-categories {
     position: relative;
     height: 100%;
     overflow: auto;
-    padding: 1rem;
+    padding: 0;
+    margin-bottom: 78px;
 }
 .title-category{
     color: #0E61C3;
@@ -60,14 +72,16 @@ a:focus , a:hover{
     font-size: 18px;
     border-bottom: 1px solid #0E61C3;
     padding: 8px 1rem 8px 1rem;
-    margin-bottom: 0;
+    margin: 0.5rem;
 }
 /* navbar */
-.sticky-category{
+body.light .sub-navbar-light{
     top: 43px;
     background: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .18);
     overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
 }
 .services-bar .nav {
     overflow-x: scroll;
@@ -80,8 +94,21 @@ a:focus , a:hover{
     padding: .375rem 1rem;
 }
 
-.bg-blue {
-    background-image: linear-gradient(to bottom, #001F4C, #0061C1);
+body.dark .navbar-dark {
+    background-image: linear-gradient(to bottom, #0B3449, #0A4566) !important;
+}
+.dark .text-dark{
+    color: white !important;
+}
+body.light .navbar-light {
+    background-image: linear-gradient(to bottom, #001F4C, #0061C1) !important;
+}
+.bg-light .text-light{
+    color: white !important;
+}
+.navbar.bottom.bg-light{
+    background-image: none;
+    background: #fff !important;
 }
 
 .bg-blue a {
@@ -98,14 +125,18 @@ a:focus , a:hover{
 
 .nav-pills .nav-link {
     color: #333;
+    border-radius: 50px;
+    white-space: nowrap;
+    scroll-snap-align: center;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.light .navbar-sub-light .nav-pills .nav-link.active,
+.light .navbar-sub-light .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #0E61C3;
     border-radius: 15px;
     font-size: 16px;
+    scroll-snap-align: center;
 }
 
 .nav-link {
@@ -131,6 +162,39 @@ a:focus , a:hover{
     display: none;
 }
 
+
+
+
+/* login */
+body.login{
+    background: url(../images/bg-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.light .welcome{
+    color: #0E61BF;
+}
+.top-login{
+    height: calc(100vh - 65px);
+    /* background: #eee; */
+}
+.powered-by{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: auto; /*to preserve the aspect ratio of the image*/
+}
+.powered-by img {
+    height: auto; 
+    width: 100%;
+    /* height: auto; */
+    margin: 0 auto;
+    padding: 18px 0;
+}
 
 
 /* card */
@@ -186,6 +250,7 @@ a:focus , a:hover{
     font-weight: 500;
     margin-bottom: .25rem;
     padding-right: 10px;
+    font-size: 14px;
 
     white-space: nowrap;
     overflow: hidden;
@@ -918,7 +983,7 @@ button:focus {
     font-weight: bold;
     font-size: 18px;
     border-bottom: 1px solid #0E61C3;
-    padding: 15px 1rem 5px 1rem;
+    padding: 15px 1rem 0.5rem 1rem;
     margin-bottom: 0;
 }
 
