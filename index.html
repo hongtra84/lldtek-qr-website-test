@@ -44,7 +44,7 @@
 	</nav>
 
 	<div class="bd-example">
-		<nav id="navbarCategories" class="navbar navbar-light fixed-top">
+		<nav id="navbarCategories" class="navbar navbar-light sticky-top sticky-category px-2 py-1">
 			<ul class="nav nav-pills flex-nowrap">
 				<li class="nav-item">
 					<a class="nav-link active" href="#scrollOne">Starter</a>
@@ -59,12 +59,12 @@
 					<a class="nav-link" href="#scrollFour">Seafood</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#scrollFive">Seafood</a>
+					<a class="nav-link" href="#scrollFive">Salad</a>
 				</li>
 			</ul>
 		</nav>
 		<div data-spy="scroll" data-target="#navbarCategories" data-offset="0" class="scrollspy-categories">
-			<p id="scrollOne" class="title-category px-0">Starter</p>
+			<p id="scrollOne" class="title-category px-0 d-none">Starter</p>
 			<div class="row p-1">
 				<div class="wrap-card col-6 col-md-3 p-1">
 					<div class="card">
@@ -338,7 +338,7 @@
 				heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial
 				keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko.
 				Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
-			<p id="scrollFive" class="title-category px-0">Seafood 2</p>
+			<p id="scrollFive" class="title-category px-0">Salad</p>
 			<p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui.
 				Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's
 				photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you
@@ -352,7 +352,6 @@
 			</p>
 		</div>
 	</div>
-
 
 
 
@@ -405,13 +404,12 @@
 
 
 	<script>
-		// window.onload = function () {
-		// 	new bootstrap.ScrollSpy(document.body, {
-		// 		target: '#navbarCategories'
-		// 	}); hotfixScrollSpy();
-		// 	window.scrollBy(0, 1);
-		// }
-		$('body').scrollspy({ target: '#navbarCategories' })
+		window.onload = function () {
+			$('body').scrollspy({ target: '#navbarCategories' })
+			
+			// window.scrollBy(1, 1);
+		}
+		// $('body').scrollspy({ target: '#navbarCategories' })
 	</script>
 
 	<script>

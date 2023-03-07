@@ -53,17 +53,21 @@ a:focus , a:hover{
     height: 100%;
     overflow: auto;
     padding: 1rem;
-    margin-top: 50px;
 }
 .title-category{
     color: #0E61C3;
     font-weight: bold;
     font-size: 18px;
     border-bottom: 1px solid #0E61C3;
-    padding: 15px 1rem 5px 1rem;
+    padding: 8px 1rem 8px 1rem;
     margin-bottom: 0;
 }
 /* navbar */
+.sticky-category{
+    top: 43px;
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .18);
+}
 .services-bar .nav {
     overflow-x: scroll;
 }
