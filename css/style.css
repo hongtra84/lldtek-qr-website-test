@@ -216,6 +216,15 @@ body.login{
     color: #565656;
     text-align: center;
 }
+.icon-img{
+    width: 12px;
+}
+.group-button a{
+    font-size: 16px;
+}
+.group-button .btn-big .bg-inner .content-btn {
+    padding: 8px 15px 14px 15px;
+}
 
 
 /* card */
