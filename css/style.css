@@ -176,6 +176,8 @@ body.login{
 }
 .light .welcome{
     color: #0E61BF;
+    font-weight: bold;
+    font-style: italic;
 }
 .top-login{
     height: calc(100vh - 65px);
@@ -194,6 +196,25 @@ body.login{
     /* height: auto; */
     margin: 0 auto;
     padding: 18px 0;
+}
+.logo{
+    width: 30%;
+    margin: 0 auto;
+}
+.light .name-restaurant{
+    font-weight: bold;
+    color: #0E61BF;
+    font-style: italic;
+    text-align: center;
+}
+.light .address{
+    text-align: center;
+    color: #565656;
+}
+.phone{
+    font-weight: bold;
+    color: #565656;
+    text-align: center;
 }
 
 
