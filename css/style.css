@@ -67,6 +67,7 @@ a:focus , a:hover{
     top: 43px;
     background: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .18);
+    overflow-x: scroll;
 }
 .services-bar .nav {
     overflow-x: scroll;
