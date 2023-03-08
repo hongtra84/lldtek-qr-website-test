@@ -192,13 +192,14 @@ body.login{
     left: 25%;
     width: 50%;
     height: auto; /*to preserve the aspect ratio of the image*/
+    text-align: center;
 }
 .powered-by img {
     height: auto; 
-    width: 100%;
+    width: 80%;
     /* height: auto; */
     margin: 0 auto;
-    padding: 18px 0;
+    padding: 19px 0;
 }
 .logo{
     width: 30%;
@@ -207,9 +208,18 @@ body.login{
 .light .name-restaurant{
     font-weight: bold;
     color: #0E61BF;
-    font-style: italic;
     text-align: center;
-    line-height: 1;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+.padding-top-header{
+    padding-top: 7vh;
+}
+.padding-y-button{
+    padding: 1.2vh 0;
+}
+.restaurant-info{
+    padding-bottom: 4vh;
 }
 .light .address{
     text-align: center;
@@ -221,7 +231,11 @@ body.login{
     text-align: center;
 }
 .icon-img{
-    width: 11px;
+    height: 15px;
+}
+.icon-img.small{
+    width: 20px;
+    height: auto;
 }
 .group-button a{
     font-size: 14px;
