@@ -12,12 +12,12 @@ html {
 
 body {
     min-height: 20rem;
-    background-color: #fff;
+    /* background-color: #fff; */
     font-family: myFirstFont;
     position: relative;
 }
 body.light{
-    background-color: #eee !important;
+    background-color: transparent !important;
 }
 body.dark{
     background-color: #001E2D !important;
