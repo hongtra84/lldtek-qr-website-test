@@ -216,9 +216,10 @@ body.login{
     text-align: center;
     line-height: 1.1;
     text-transform: capitalize;
+    font-size: 4vh !important;
 }
 .padding-top-header{
-    padding-top: 7vh;
+    padding-top: 5vh;
 }
 .padding-y-button{
     padding: 1.2vh 0;
