@@ -17,7 +17,7 @@ body {
     position: relative;
 }
 body.light{
-    background-color: #fff !important;
+    background-color: #eee !important;
 }
 body.dark{
     background-color: #001E2D !important;
