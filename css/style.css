@@ -53,6 +53,9 @@ a:focus , a:hover{
     border: none;
     box-shadow: none;
 }
+.justify-content-evenly{
+    justify-content: space-evenly !important;
+}
 
 /* navbar Scrollspy */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -206,6 +209,7 @@ body.login{
     color: #0E61BF;
     font-style: italic;
     text-align: center;
+    line-height: 1;
 }
 .light .address{
     text-align: center;
@@ -224,7 +228,7 @@ body.login{
     text-transform: capitalize;
 }
 .group-button .btn-big .bg-inner .content-btn {
-    padding: 8px 15px 14px 15px;
+    padding: 8px 20px 14px 20px;
 }
 
 
