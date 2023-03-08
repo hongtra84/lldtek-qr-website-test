@@ -203,7 +203,7 @@ body.login{
     height: auto; 
     width: 150px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 0.5vh;
 }
 .logo{
     margin: 0 auto;
@@ -275,6 +275,9 @@ body.login{
     font-size: 16px;
 }
 #loginColumn .group-button.two-column .btn-big .bg-inner .content-btn {
+    padding: 8px 15px 14px 15px;
+}
+#loginColumn .group-button.one-column .btn-big .bg-inner .content-btn {
     padding: 8px 20px 14px 20px;
 }
 
