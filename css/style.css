@@ -224,6 +224,7 @@ body.login{
 .light .address{
     text-align: center;
     color: #565656;
+    text-transform: capitalize;
 }
 .phone{
     font-weight: bold;
@@ -239,7 +240,7 @@ body.login{
 }
 .group-button a{
     font-size: 14px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .group-button .btn-big .bg-inner .content-btn {
     padding: 8px 20px 14px 20px;
