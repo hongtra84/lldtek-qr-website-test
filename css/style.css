@@ -178,7 +178,7 @@ body.login{
     background-position: center;
     height: 100%;
     position: relative;
-    background-color: #d7e7ff !important;
+    background-color: #fff !important;   /* change bg of status bar */
 }
 .light .welcome{
     color: #0E61BF;
