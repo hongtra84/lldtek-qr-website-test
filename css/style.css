@@ -217,10 +217,11 @@ body.login{
     text-align: center;
 }
 .icon-img{
-    width: 12px;
+    width: 11px;
 }
 .group-button a{
-    font-size: 16px;
+    font-size: 14px;
+    text-transform: capitalize;
 }
 .group-button .btn-big .bg-inner .content-btn {
     padding: 8px 15px 14px 15px;
