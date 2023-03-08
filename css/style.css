@@ -404,6 +404,7 @@ body.login{
 
 .btn-add-to-order .bg-inner .content-btn .text-empty {
     opacity: 0;
+    width: 12px;
 }
 
 .my-order {
