@@ -222,9 +222,7 @@ body.login{
 .padding-top-header{
     padding-top: 5vh;
 }
-#two-column .padding-y-button{
-    padding: 1.2vh 0;
-}
+
 .restaurant-info{
     padding-bottom: 4vh;
 }
@@ -246,11 +244,26 @@ body.login{
     width: 20px;
     height: auto;
 }
-#two-column.group-button a{
+#twoColumn .padding-y-button{
+    padding: 1.2vh 0;
+}
+
+#twoColumn.group-button a{
     font-size: 14px;
     /* text-transform: capitalize; */
 }
-#two-column.group-button .btn-big .bg-inner .content-btn {
+#twoColumn.group-button .btn-big .bg-inner .content-btn {
+    padding: 8px 15px 14px 15px;
+}
+
+#OneColumn .padding-y-button{
+    padding: 1.2vh 0;
+}
+#oneColumn.group-button a{
+    font-size: 14px;
+    /* text-transform: capitalize; */
+}
+#oneColumn.group-button .btn-big .bg-inner .content-btn {
     padding: 8px 15px 14px 15px;
 }
 .statusbar-overlay {
