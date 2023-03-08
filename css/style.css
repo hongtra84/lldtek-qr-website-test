@@ -185,8 +185,9 @@ body.login{
     font-style: italic;
 }
 .top-login{
-    height: calc(100vh - 65px);
+    /* height: calc(100vh - 65px); */
     /* background: #eee; */
+    height: 100%;
 }
 .powered-by{
     position: absolute;
@@ -234,7 +235,7 @@ body.login{
     text-align: center;
 }
 .icon-img{
-    height: 15px;
+    height: 13px;
 }
 .icon-img.small{
     width: 20px;
