@@ -226,12 +226,12 @@ body.login{
 #loginColumn.one-column.padding-top-header{
     padding-top: 4vh;
 }
-#loginColumn.two-column .restaurant-info{
+/* #loginColumn.two-column .restaurant-info{
     padding-bottom: 3.5vh;
 }
 #loginColumn.one-column .restaurant-info{
     padding-bottom: 2vh;
-}
+} */
 .light .address{
     text-align: center;
     color: #565656;
@@ -262,6 +262,9 @@ body.login{
     padding: 8px 15px 14px 15px;
 }
 
+#loginColumn.two-column .padding-y-button{
+    padding: 1vh 0;
+}
 #loginColumn.one-column .padding-y-button{
     padding: 0;
 }
@@ -274,6 +277,15 @@ body.login{
 #loginColumn .group-button.two-column .btn-big .bg-inner .content-btn {
     padding: 8px 20px 14px 20px;
 }
+
+#loginColumn .group-button.two-column{
+    padding: 2vh 0;
+}
+
+#loginColumn .group-button.one-column{
+    padding: 4vh 0;
+}
+
 .statusbar-overlay {
     background: #000;
     opacity: 0;
