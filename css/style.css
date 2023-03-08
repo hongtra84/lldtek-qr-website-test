@@ -183,6 +183,7 @@ body.login{
     color: #0E61BF;
     font-weight: bold;
     font-style: italic;
+    font-size: 2.5vh !important;
 }
 .top-login{
     /* height: calc(100vh - 65px); */
