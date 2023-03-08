@@ -220,12 +220,17 @@ body.login{
     text-transform: capitalize;
     font-size: 3.2vh !important;
 }
-.padding-top-header{
+#loginColumn.two-column.padding-top-header{
     padding-top: 5vh;
 }
-
-.restaurant-info{
-    padding-bottom: 4vh;
+#loginColumn.one-column.padding-top-header{
+    padding-top: 4vh;
+}
+#loginColumn.two-column .restaurant-info{
+    padding-bottom: 3.5vh;
+}
+#loginColumn.one-column .restaurant-info{
+    padding-bottom: 2vh;
 }
 .light .address{
     text-align: center;
@@ -245,26 +250,28 @@ body.login{
     width: 20px;
     height: auto;
 }
-#twoColumn .padding-y-button{
+#loginColumn .two-column .padding-y-button{
     padding: 1.2vh 0;
 }
 
-#twoColumn.group-button a{
+#loginColumn .group-button.two-column a{
     font-size: 14px;
     /* text-transform: capitalize; */
 }
-#twoColumn.group-button .btn-big .bg-inner .content-btn {
+#loginColumn .group-button.two-column .btn-big .bg-inner .content-btn {
     padding: 8px 15px 14px 15px;
 }
 
-#oneColumn .padding-y-button{
-    padding: 1vh 0;
+#loginColumn.one-column .padding-y-button{
+    padding: 0;
 }
-#oneColumn.group-button a{
+#loginColumn .group-button.two-column a{
     font-size: 14px;
-    /* text-transform: capitalize; */
 }
-#oneColumn.group-button .btn-big .bg-inner .content-btn {
+#loginColumn .group-button.one-column a{
+    font-size: 14px;
+}
+#loginColumn .group-button.two-column .btn-big .bg-inner .content-btn {
     padding: 8px 20px 14px 20px;
 }
 .statusbar-overlay {
