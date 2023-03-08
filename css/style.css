@@ -239,7 +239,8 @@ body.login{
     text-align: center;
 }
 .icon-img{
-    height: 12px;
+    height: 16px;
+    padding: 0 0 3px 0;
 }
 .icon-img.small{
     width: 20px;
