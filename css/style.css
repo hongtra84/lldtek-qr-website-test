@@ -171,8 +171,8 @@ body.light .navbar-light {
 .dropdown-toggle::after {
     display: none;
 }
-.dropdown.applet:hover{
-    z-index: 9999;
+.dropdown-menu:hover{
+    z-index: 1040 !important;
 }
 
 
