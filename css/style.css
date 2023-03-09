@@ -1471,5 +1471,8 @@ input[type="checkbox"]:focus {
         max-width: 30%;
         /* flex: 0 0 auto !important; */
     }
+    #loginColumn .btn-add-to-order{
+        max-width: 100%;
+    }
 
 }
