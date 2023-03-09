@@ -256,9 +256,6 @@ body.login{
     width: 20px;
     height: auto;
 }
-#loginColumn .two-column .padding-y-button{
-    padding: 1.2vh 0;
-}
 
 #loginColumn .group-button.two-column a{
     font-size: 14px;
@@ -272,7 +269,7 @@ body.login{
     padding: 1vh 0;
 }
 #loginColumn.one-column .padding-y-button{
-    padding: 0;
+    padding: 0.2vh 0;
 }
 #loginColumn .group-button.two-column a{
     font-size: 14px;
