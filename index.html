@@ -43,7 +43,10 @@
 		</div>
 	</nav>
 
+
+
 	<div id="section">
+		<!--  -->
 		<nav id="navbarCategories" class="navbar sub-navbar-light fixed-top px-2 py-1">
 			<ul class="nav nav-pills flex-nowrap">
 				<li class="nav-item">
@@ -61,9 +64,16 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#scrollFive">Salad</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#scrollSix">Fruit</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#scrollSeven">Cake</a>
+				</li>
 			</ul>
 		</nav>
-		<div data-spy="scroll" data-target="#navbarCategories" data-offset="0" class="scrollspy-categories">
+		<div data-spy="scroll" data-target="#navbarCategories" data-offset="0" class="scrollspy-categories"
+			data-smooth-scroll="true" tabindex="0">
 			<div>
 				<div id="scrollOne">
 					<p class="title-category px-0 d-none">Starter</p>
@@ -1370,6 +1380,18 @@
 					</div>
 				</div>
 			</div>
+			<div>
+				<p id="scrollSix" class="title-category px-0">Fruit</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum ut earum quisquam beatae?
+					Sit veritatis veniam ipsum, consectetur vel maiores voluptas quo adipisci quod eum blanditiis
+					doloremque itaque esse!</p>
+			</div>
+			<div>
+				<p id="scrollSeven" class="title-category px-0">Cake</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum ut earum quisquam beatae?
+					Sit veritatis veniam ipsum, consectetur vel maiores voluptas quo adipisci quod eum blanditiis
+					doloremque itaque esse!</p>
+			</div>
 		</div>
 	</div>
 
@@ -1421,17 +1443,18 @@
 
 	<script src="./js/font-awesome.js"></script>
 	<script src="./js/cart.js"></script>
+	<!-- <script src="./js/scrollspy.js"></script> -->
 
 
-	<!-- scrollspy -->
+
+
 	<script>
 		window.onload = function () {
 			$('body').scrollspy({
 				target: '#navbarCategories',
 				offset: 140,
 			})
-			if ($(".nav-link"))
-				$(".nav-link:first").addClass('active');
+			$(".nav-link:first").addClass('active');
 			$(".nav-link:last").removeClass('active');
 
 			// scroll to back will active at first element
@@ -1444,20 +1467,24 @@
 			});
 
 
+			// var outerContentWidth = $('.sub-navbar-light').width();
+			// var scrollPosition = outerContentWidth / 2;
+			// $('.sub-navbar-light').scrollLeft(scrollPosition);
+
+
 			// scroll hor when active
 			const nav = document.querySelector('nav');
 			const h = document.documentElement;
 
 			document.addEventListener('scroll', function () {
-				nav.scrollTo(nav.querySelector('.active').offsetLeft, 0);
+				nav.scrollTo(nav.querySelector('.active').scrollLeft, 0);
 			});
 
-
+			// go to top page when load page
+			window.onbeforeunload = function () {
+				window.scrollTo(0, 0);
+			}
 		}
-
-
-		// last = document.querySelector('#navbarCategories').lastElementChild;
-		// last.scrollIntoView();
 	</script>
 
 	<script>
