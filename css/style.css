@@ -66,6 +66,18 @@ a:focus , a:hover{
 }
 
 /* navbar Scrollspy */
+nav {
+    
+    width: 100%;
+    max-width: 500px;
+    scroll-behavior: smooth;
+  }
+  
+  .nav {
+    flex-wrap: unset;
+    flex-direction: row;
+  }
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #007bff;

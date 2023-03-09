@@ -1438,10 +1438,21 @@
 			const heightOfScrollOne = document.getElementById('scrollOne').clientHeight;
 			console.log(heightOfScrollOne);
 			window.addEventListener("scroll", () => {
-				if (window.scrollY < heightOfScrollOne) {
+				if (window.scrollY < heightOfScrollOne - 140) {
 					$(".nav-link:first").addClass('active');
 				}
 			});
+
+
+			// scroll hor when active
+			const nav = document.querySelector('nav');
+			const h = document.documentElement;
+
+			document.addEventListener('scroll', function () {
+				nav.scrollTo(nav.querySelector('.active').offsetLeft, 0);
+			});
+
+
 		}
 
 
