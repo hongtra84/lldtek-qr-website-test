@@ -471,10 +471,14 @@ body.login{
 
 .btn-add-to-order .bg-inner .content-btn .text-price {
     font-size: 16px;
+    width: 30%;
+    text-align: right;
 }
 
 .btn-add-to-order .bg-inner .content-btn .text-empty {
     opacity: 0;
+    width: 30%;
+    text-align: left;
     /* width: 12px; */
 }
 #loginColumn .btn-add-to-order .bg-inner .content-btn .text-empty {
