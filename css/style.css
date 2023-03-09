@@ -74,8 +74,7 @@ a:focus , a:hover{
     position: relative;
     height: 100%;
     overflow: auto;
-    padding: 0;
-    margin-bottom: 78px;
+    padding: 0 0 78px 0;
 }
 .title-category{
     color: #0E61C3;
@@ -171,6 +170,9 @@ body.light .navbar-light {
 
 .dropdown-toggle::after {
     display: none;
+}
+.dropdown.applet:hover{
+    z-index: 9999;
 }
 
 
@@ -473,9 +475,12 @@ body.login{
 
 .btn-add-to-order .bg-inner .content-btn .text-empty {
     opacity: 0;
+    /* width: 12px; */
+}
+#loginColumn .btn-add-to-order .bg-inner .content-btn .text-empty {
+    opacity: 0;
     width: 12px;
 }
-
 .my-order {
     font-size: 12px;
     line-height: 1;
