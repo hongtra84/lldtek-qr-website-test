@@ -1,4 +1,10 @@
 /* Show it is fixed to the top */
+.body {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+
 html {
     max-width: 100%;
     overflow-x: hidden;
@@ -282,11 +288,11 @@ body.login{
 }
 
 #loginColumn .group-button.two-column{
-    padding: 2% 0;
+    padding: 2vh 0;
 }
 
 #loginColumn .group-button.one-column{
-    padding: 4% 0;
+    padding: 4vh 0;
 }
 
 .statusbar-overlay {
