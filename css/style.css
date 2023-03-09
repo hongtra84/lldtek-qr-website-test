@@ -86,7 +86,7 @@ a:focus , a:hover{
 }
 /* navbar */
 body.light .sub-navbar-light{
-    top: 43px;
+    top: 44px;
     background: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .18);
     overflow-x: scroll;
