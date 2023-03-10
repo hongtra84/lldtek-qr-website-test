@@ -20,40 +20,62 @@
 	<style>
 		html,
 		body {
-		  height: 100%;
+			height: 100%;
 		}
-		.navbar-start {
-		  width: 300px;
-		  overflow-y: scroll;
-		  display: flex;
-		  margin-left: auto;
-		  margin-right: auto;
-		  border: 2px solid #fff;
+
+		.navbar-category {
+			/* width: 300px; */
+			width: calc(100vw - 20px);
+			overflow-y: scroll;
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			margin: 5px 0;
 		}
-		.navbar-brand > .navbar-item {
-		  font-size: 20px;
-		  font-weight: bold;
+
+		.navbar-brand>.navbar-item {
+			font-size: 20px;
+			font-weight: bold;
 		}
+
 		.navbar-menu .navbar-item {
-		  font-size: 14px;
-		  transition: background-color 0.26s, color 0.26s;
+			font-size: 16px;
+			transition: background-color 0.26s, color 0.26s;
+			padding: 0.24rem 1rem 0.4rem 1rem;
+			white-space: nowrap;
 		}
-		.navbar-menu .navbar-item.active {
-		  background-color: #222;
-		  color: red;
+
+		.navbar-menu a.navbar-item {
+			color: #383838 !important;
 		}
-		.page {
-		  height: 100%;
-		  padding: 80px 0;
-		  width: 100%;
+
+		.navbar-menu a.navbar-item.active {
+			background-color: #0e61c3;
+			color: #fff !important;
+			border-radius: 50px;
 		}
-		.page:nth-child(odd) {
+		.content-scroll {
+			/* height: 80%; */
+			padding: 0;
+			width: 100%;
+		}
+
+		.content-scroll .container {
+			padding: 0;
+		}
+		.content-scroll{
+			padding-top: 44px;
+    		padding-bottom: 70px;
+		}
+
+		/* .content-scroll:nth-child(odd) {
 		  background-color: #ddd;
 		}
-		.page:nth-child(even) {
+		.content-scroll:nth-child(even) {
 		  background-color: #fff;
-		}
-	  </style>
+		} */
+	</style>
 </head>
 
 <body class="light">
@@ -82,286 +104,59 @@
 	</nav>
 
 
-	<nav class="navbar dark fixed-top" role="navigation" aria-label="main navigation">
-      <div class="container">
-        <div id="navbar" class="navbar-menu navbar-scroll">
-          <div class="navbar-start">
-            <a href="#scrollOne" class="navbar-item active">First Starter</a>
-            <a href="#scrollTwo" class="navbar-item">Chicken</a>
-            <a href="#scrollThree" class="navbar-item">Soup</a>
-            <a href="#scrollFour" class="navbar-item">Chicken</a>
-            <a href="#scrollFive" class="navbar-item">Seafood</a>
-            <a href="#scrollSix" class="navbar-item">Salad</a>
-            <a href="#scrollSeven" class="navbar-item">Cake</a>
-            <a href="#scrollEight" class="navbar-item">First</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+	<nav class="navbar fixed-top py-0 px-2" role="navigation" aria-label="main navigation">
+		<div class="container px-0">
+			<div id="navbar" class="navbar-menu navbar-scroll">
+				<div class="navbar-category">
+					<a href="#scrollOne" class="navbar-item active">First Starter</a>
+					<a href="#scrollTwo" class="navbar-item">Fish</a>
+					<a href="#scrollThree" class="navbar-item">Soup</a>
+					<a href="#scrollFour" class="navbar-item">Chicken</a>
+					<a href="#scrollFive" class="navbar-item">Seafood</a>
+					<a href="#scrollSix" class="navbar-item">Salad</a>
+					<a href="#scrollSeven" class="navbar-item">Cake</a>
+					<a href="#scrollEight" class="navbar-item">First</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-    <section id="scrollOne" class="page">
-      <div class="container">
-        <p class="title-category px-0 d-none">Starter</p>
-					<div class="row p-1 m-0">
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
-										width="auto" height="auto" /></a>
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<a href="my-order.html">
-											<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
-										</a>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus" class="">
-													<div class="d-flex justify-content-end align-items-center">
-														<button class="btn minus minus-plus" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<input type="text" class="form-control quantity" id="quantity"
-															size="10" value="0">
-														<button class="btn plus minus-plus" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto"
-									height="auto" />
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<h6 class="card-title">Hand-cut Ribeye</h6>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus">
-													<div class="d-flex align-items-center">
-														<button class="btn" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<p class="num-food">4</p>
-														<button class="btn" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto"
-									height="auto" />
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<h6 class="card-title">Hand-cut Ribeye</h6>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus">
-													<div class="d-flex align-items-center">
-														<button class="btn" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<p class="num-food">4</p>
-														<button class="btn" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto"
-									height="auto" />
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<h6 class="card-title">Hand-cut Ribeye</h6>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus">
-													<div class="d-flex align-items-center">
-														<button class="btn" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<p class="num-food">4</p>
-														<button class="btn" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto"
-									height="auto" />
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<h6 class="card-title">Hand-cut Ribeye</h6>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus">
-													<div class="d-flex align-items-center">
-														<button class="btn" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<p class="num-food">4</p>
-														<button class="btn" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto"
-									height="auto" />
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<h6 class="card-title">Hand-cut Ribeye</h6>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus">
-													<div class="d-flex align-items-center">
-														<button class="btn" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<p class="num-food">4</p>
-														<button class="btn" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="wrap-card col-6 col-md-3 p-1">
-							<div class="card">
-								<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto"
-									height="auto" />
-								<div class="card-body text-center">
-									<div class='cvp'>
-										<h6 class="card-title">Hand-cut Ribeye</h6>
-										<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
-											elit.
-											Sit
-											quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
-											Soluta
-											praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
-										<div class="d-flex justify-content-between">
-											<p class="card-price align-self-center">$299</p>
-											<div class="align-self-center">
-												<button id="btnAddDish" class="btn" type="button">
-													<i class="fas fa-plus-circle icon-blue"></i>
-												</button>
-												<div id="minusPlus">
-													<div class="d-flex align-items-center">
-														<button class="btn" type="button">
-															<i class="fas fa-minus-circle icon-grey"></i>
-														</button>
-														<p class="num-food">4</p>
-														<button class="btn" type="button">
-															<i class="fas fa-plus-circle icon-blue"></i>
-														</button>
-													</div>
+	<div class="group-section">
+		<section id="scrollOne" class="content-scroll">
+			<div class="container">
+				<p class="title-category px-0 d-none">Starter</p>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -370,55 +165,2119 @@
 							</div>
 						</div>
 					</div>
-		
-      </div>
-    </section>
 
-    <section id="scrollTwo" class="page">
-      <div class="container">
-        <h2 class="title">Section 2</h2>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et beatae alias eius, amet sequi dolores ea voluptate debitis harum iure nam rerum a! At veritatis facilis possimus eum pariatur eveniet.</p>
-      </div>
-    </section>
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
 
-    <section id="scrollThree" class="page">
-      <div class="container">
-        <h2 class="title">Section 3</h2>
-      </div>
-    </section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <section id="scrollFour" class="page">
-      <div class="container">
-        <h2 class="title">Section 4</h2>
-      </div>
-    </section>
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
 
-    <section id="scrollFive" class="page">
-      <div class="container">
-        <h2 class="title">Section 5</h2>
-      </div>
-    </section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <section id="scrollSix" class="page">
-      <div class="container">
-        <h2 class="title">Section 6</h2>
-      </div>
-    </section>
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
 
-    <section id="scrollSeven" class="page">
-      <div class="container">
-        <h2 class="title">Section 7</h2>
-      </div>
-    </section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <section id="scrollEight" class="page">
-      <div class="container">
-        <h2 class="title">Section 8</h2>
-      </div>
-    </section>
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollTwo" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">Fish</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollThree" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">Soup</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollFour" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">Chicken</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollFive" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">Seafood</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollSix" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">Salad</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollSeven" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">Cake</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="scrollEight" class="content-scroll">
+			<div class="container">
+				<h2 class="title-category px-0">First</h2>
+				<div class="row p-1 m-0">
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<a href="sub-items.html"><img class='mx-auto img-thumbnail' src="./images/food-00.jpg"
+									width="auto" height="auto" /></a>
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<a href="my-order.html">
+										<h6 class="card-title">Hand-cut Ribeye text expanded here ...</h6>
+									</a>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus" class="">
+												<div class="d-flex justify-content-end align-items-center">
+													<button class="btn minus minus-plus" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<input type="text" class="form-control quantity" id="quantity"
+														size="10" value="0">
+													<button class="btn plus minus-plus" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap-card col-6 col-md-3 p-1">
+						<div class="card">
+							<img class='mx-auto img-thumbnail' src="./images/food-00.jpg" width="auto" height="auto" />
+							<div class="card-body text-center">
+								<div class='cvp'>
+									<h6 class="card-title">Hand-cut Ribeye</h6>
+									<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+										elit.
+										Sit
+										quo eligendi asperiores, sint hic eius, a vitae commodi esse, iusto tempore.
+										Soluta
+										praesentium, perferendis consectetur quos nulla voluptates autem unde.</p>
+									<div class="d-flex justify-content-between">
+										<p class="card-price align-self-center">$299</p>
+										<div class="align-self-center">
+											<button id="btnAddDish" class="btn" type="button">
+												<i class="fas fa-plus-circle icon-blue"></i>
+											</button>
+											<div id="minusPlus">
+												<div class="d-flex align-items-center">
+													<button class="btn" type="button">
+														<i class="fas fa-minus-circle icon-grey"></i>
+													</button>
+													<p class="num-food">4</p>
+													<button class="btn" type="button">
+														<i class="fas fa-plus-circle icon-blue"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
 
 
-	
+
 
 
 

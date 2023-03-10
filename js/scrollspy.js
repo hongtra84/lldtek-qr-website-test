@@ -250,7 +250,7 @@ exports.default = VanillaScrollspy;
 update_nav_menu_position = function(){
     // using jquery here
     var $active_nav_item = $("#navbar").find('a.active'),
-        $scroll_elem = $(".navbar-start"),
+        $scroll_elem = $(".navbar-category"),
         left_pos, right_limit, active_elem_left_pos, active_elem_right_pos, scroll_pos, new_scroll_pos;
 
     if( ! $active_nav_item.length ) {
