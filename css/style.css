@@ -121,9 +121,8 @@ a:focus , a:hover{
 
 
 nav {
-    
     width: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     scroll-behavior: smooth;
   }
   

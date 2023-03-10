@@ -35,9 +35,9 @@
 						<i class="fa-solid fa-list-ul icon-white"></i>
 					</button>
 					<div class="dropdown-menu menu-right">
-						<button class="dropdown-item" type="button">Waiter</button>
-						<button class="dropdown-item" type="button">Another action</button>
-						<button class="dropdown-item" type="button">Something else here ...</button>
+						<a href="login.html" class="dropdown-item" type="button">Login</a>
+						<a class="dropdown-item" type="button">Another action</a>
+						<a class="dropdown-item" type="button">Something else here ...</a>
 					</div>
 				</div>
 			</div>
@@ -49,14 +49,14 @@
 		<div class="container px-0">
 			<div id="navbar" class="navbar-menu navbar-scroll">
 				<div class="navbar-category">
-					<a href="#scrollOne" class="navbar-item active">First Starter</a>
+					<a href="#scrollOne" class="navbar-item active">Starter</a>
 					<a href="#scrollTwo" class="navbar-item">Fish</a>
 					<a href="#scrollThree" class="navbar-item">Soup</a>
 					<a href="#scrollFour" class="navbar-item">Chicken</a>
 					<a href="#scrollFive" class="navbar-item">Seafood</a>
 					<a href="#scrollSix" class="navbar-item">Salad</a>
 					<a href="#scrollSeven" class="navbar-item">Cake</a>
-					<a href="#scrollEight" class="navbar-item">First</a>
+					<a href="#scrollEight" class="navbar-item">Last</a>
 				</div>
 			</div>
 		</div>
@@ -1948,7 +1948,7 @@
 
 		<section id="scrollEight" class="content-scroll">
 			<div class="container">
-				<h2 class="title-category px-0">First</h2>
+				<h2 class="title-category px-0">Last</h2>
 				<div class="row p-1 m-0">
 					<div class="wrap-card col-6 col-md-3 p-1">
 						<div class="card">
@@ -2274,40 +2274,13 @@
 
 	<script>
 		window.onload = function () {
-			$('body').scrollspy({
-				target: '#navbarCategories',
-				offset: 140,
-			})
-			$(".nav-link:first").addClass('active');
-			$(".nav-link:last").removeClass('active');
-
 			// scroll to back will active at first element
 			const heightOfScrollOne = document.getElementById('scrollOne').clientHeight;
-			console.log(heightOfScrollOne);
 			window.addEventListener("scroll", () => {
 				if (window.scrollY < heightOfScrollOne - 140) {
-					$(".nav-link:first").addClass('active');
+					$(".navbar-item:first").addClass('active');
 				}
 			});
-
-
-			// var outerContentWidth = $('.sub-navbar-light').width();
-			// var scrollPosition = outerContentWidth / 2;
-			// $('.sub-navbar-light').scrollLeft(scrollPosition);
-
-
-			// scroll hor when active
-			// const nav = document.querySelector('nav');
-			// const h = document.documentElement;
-
-			// document.addEventListener('scroll', function () {
-			// 	nav.scrollTo(nav.querySelector('.active').offsetLeft, 0);
-			// });
-
-			// go to top page when load page
-			window.onbeforeunload = function () {
-				window.scrollTo(200, 0);
-			}
 		}
 	</script>
 
