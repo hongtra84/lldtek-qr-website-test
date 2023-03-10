@@ -172,7 +172,7 @@ var VanillaScrollspy = function () {
 
         if (p < 1) {
           window.requestAnimFrame(tick);
-          window.scrollTo(0, scrollY + (scrollTargetY - scrollY) * t);
+          window.scrollTo(300, scrollY + (scrollTargetY - scrollY) * t);
         } else {
           window.scrollTo(0, scrollTargetY);
         }

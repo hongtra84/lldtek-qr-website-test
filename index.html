@@ -62,7 +62,7 @@
 		</div>
 	</nav>
 
-	<div class="group-section">
+	<div id="group-section" class="group-section">
 		<section id="scrollOne" class="content-scroll">
 			<div class="container">
 				<p class="title-category px-0 d-none">Starter</p>
@@ -2270,17 +2270,23 @@
 	<script src="./js/scrollspy.js"></script>
 
 
+	<script>
+
+	</script>
+
+	<script>
+		$('.navbar-item').click(function(){
+        $('html, body').animate({
+            scrollTop: $('#group-section').position().top },
+            1000
+        );
+    });
+	</script>
 
 
 	<script>
-		window.onload = function () {
-			// scroll to back will active at first element
-			const heightOfScrollOne = document.getElementById('scrollOne').clientHeight;
-			window.addEventListener("scroll", () => {
-				if (window.scrollY < heightOfScrollOne - 140) {
-					$(".navbar-item:first").addClass('active');
-				}
-			});
+		if ($('navbar-item').hasClass('active')) {
+			$('.group-section').addCss('padding-top', '100px');
 		}
 	</script>
 

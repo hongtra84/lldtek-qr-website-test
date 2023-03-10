@@ -98,20 +98,23 @@ a:focus , a:hover{
     color: #fff !important;
     border-radius: 50px;
 }
-.content-scroll {
-    /* height: 80%; */
-    padding: 0;
-    width: 100%;
-}
-
 .content-scroll .container {
     padding: 0;
 }
+
+.navbar-item.active .content-scroll{
+    padding-top: 92px;
+    padding-bottom: 10px;
+    width: 100%;
+}
 .content-scroll{
+    /* margin-top: 50px; */
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 .group-section{
+    /* margin-top: 50px; */
     padding-top: 36px;
     padding-bottom: 63px;
 }
