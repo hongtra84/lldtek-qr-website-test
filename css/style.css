@@ -66,6 +66,56 @@ a:focus , a:hover{
 }
 
 /* navbar Scrollspy */
+/* vanila scrollspy */
+.navbar-category {
+    /* width: 300px; */
+    width: calc(100vw - 20px);
+    overflow-y: scroll;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.navbar-brand>.navbar-item {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-menu .navbar-item {
+    font-size: 16px;
+    /* transition: background-color 0.26s, color 0.26s; */
+    padding: 0.24rem 1rem 0.4rem 1rem;
+    white-space: nowrap;
+}
+
+.navbar-menu a.navbar-item {
+    color: #383838 !important;
+}
+
+.navbar-menu a.navbar-item.active {
+    background-color: #0e61c3;
+    color: #fff !important;
+    border-radius: 50px;
+}
+.content-scroll {
+    /* height: 80%; */
+    padding: 0;
+    width: 100%;
+}
+
+.content-scroll .container {
+    padding: 0;
+}
+.content-scroll{
+    padding-top: 44px;
+    padding-bottom: 70px;
+}
+/* end vanila scrollspy */
+
+
+
 nav {
     
     width: 100%;
