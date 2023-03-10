@@ -109,8 +109,12 @@ a:focus , a:hover{
     padding: 0;
 }
 .content-scroll{
-    padding-top: 44px;
-    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.group-section{
+    padding-top: 36px;
+    padding-bottom: 63px;
 }
 /* end vanila scrollspy */
 
