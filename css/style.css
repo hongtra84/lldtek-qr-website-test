@@ -69,7 +69,7 @@ a:focus , a:hover{
 /* vanila scrollspy */
 .navbar-category {
     /* width: 300px; */
-    width: calc(100vw - 20px);
+    width: calc(100vw - 15px);
     overflow-y: scroll;
     display: flex;
     margin-left: auto;
