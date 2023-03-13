@@ -1489,6 +1489,10 @@ input[type="checkbox"]:focus {
 }
 .receipt .sub-item .item-left{
     padding-left: 1rem;
+    color: #666
+}
+.receipt .item-left.info{
+    color: #666
 }
 .border-bottom-grey{
     border-bottom: 1px solid #d7d7d7;
@@ -1497,6 +1501,9 @@ input[type="checkbox"]:focus {
 .item-price{
     width: 23%;
     text-align: right;
+}
+.d-flex.d-none{
+    display: none !important;
 }
 .text-price.text-normal{
     font-weight: 400;
