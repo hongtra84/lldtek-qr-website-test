@@ -383,9 +383,9 @@
 
         <!-- Add Items -->
         <p class="title-add-item">Add Items</p>
-        <div class="card-no-shadow py-2">
+        <div class="card-thin-shadow py-2">
             <div class="py-2">
-                <div class="card no-shadow">
+                <div class="card thin-shadow">
                     <ul class="horizontal-slide flex-wrap justify-content-start">
                         <li class="span2">
                             <label class="radio">
@@ -444,7 +444,7 @@
             </div>
 
             <div class="py-2">
-                <div class="card no-shadow">
+                <div class="card thin-shadow">
                     <ul class="multi-checkbox d-flex flex-wrap justify-content-between">
                         <li class="span2">
                             <label class="radio">
@@ -513,7 +513,7 @@
 
         <!-- Product Descriptions -->
         <p class="title-add-item">Product Descriptions</p>
-        <div class="card no-shadow m-3">
+        <div class="card thin-shadow m-3">
             <div class="row m-0">
                 <div class="col-12 p-0">
                     <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci nesciunt
@@ -526,9 +526,9 @@
 
         <!-- Customer request -->
         <p class="title-add-item">Special Request</p>
-        <div class="card no-shadow m-3">
+        <div id="textAreaRequest" class="m-3">
             <div class="form-group">
-                <textarea id="textAreaRequest" class="form-control textarea" rows="3"
+                <textarea  class="form-control textarea" rows="3"
                     placeholder="Special Request"></textarea>
             </div>
         </div>
@@ -636,16 +636,6 @@
             });
         });
     </script>
-
-    <script>
-        $('#textAreaRequest').click(function (a) {
-            if ($(a.target).is("#customSelect") === false) {
-                $("#customSelect").removeClass("on");
-            }
-        });
-    </script>
-
-
 
 </body>
 
