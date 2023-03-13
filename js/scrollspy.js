@@ -144,7 +144,7 @@ var VanillaScrollspy = function () {
 
       var targetY = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
-      var scrollTargetY = targetY;
+      var scrollTargetY = targetY ;
       var scrollY = window.scrollY || document.documentElement.scrollTop;
       var currentTime = 0;
       var time = Math.max(0.1, Math.min(Math.abs(scrollY - scrollTargetY) / this.speed, 0.8));
@@ -172,9 +172,9 @@ var VanillaScrollspy = function () {
 
         if (p < 1) {
           window.requestAnimFrame(tick);
-          window.scrollTo(300, scrollY + (scrollTargetY - scrollY) * t);
+          window.scrollTo(0, scrollY + (scrollTargetY - scrollY) * t);
         } else {
-          window.scrollTo(0, scrollTargetY);
+          window.scrollTo(0, scrollTargetY); /* change here */
         }
       };
 
@@ -193,7 +193,7 @@ var VanillaScrollspy = function () {
         currLink = links[i];
         refElement = document.querySelector(currLink.getAttribute('href'));
 
-        if (refElement.offsetTop <= scrollPos && refElement.offsetTop + refElement.clientHeight > scrollPos) {
+        if (refElement.offsetTop <= scrollPos && refElement.offsetTop + refElement.clientHeight  > scrollPos) {
           currLink.classList.add('active');
         } else {
           currLink.classList.remove('active');
@@ -208,7 +208,7 @@ var VanillaScrollspy = function () {
       function control(e) {
         e.preventDefault();
         var target = document.querySelector(this.hash);
-        self.scrollToY(target.offsetTop);
+        self.scrollToY(target.offsetTop ); /* change offset when click menu */
       }
 
       var i = void 0;
