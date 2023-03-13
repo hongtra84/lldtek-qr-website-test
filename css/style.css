@@ -890,7 +890,7 @@ textarea {
     width: 100%;
     border-radius: 0 !important;
     box-sizing: border-box;
-    border: none !important;
+    border: 1px solid transparent !important;
     font-size: 18px !important;
     color: #000 !important;
     font-weight: 300;
