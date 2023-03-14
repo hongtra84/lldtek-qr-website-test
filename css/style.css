@@ -884,13 +884,6 @@ ul.multi-checkbox li[class*="span"]:first-child {
  .input-box.active .input-custom {
 	 border: 2px solid #0E61BF;
 }
- .btn:hover {
-	 background: #ddd;
-	 transition: 250ms;
-}
- .btn:focus {
-	 outline: none;
-}
 
  
 
