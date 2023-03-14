@@ -829,7 +829,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
 	 text-overflow: ellipsis;
 	 white-space: nowrap;
 	 left: 5px;
-	 top: 5px;
+	 top: 3px;
 	 padding: 0 8px;
 	 transition: 250ms;
 	 user-select: none;
@@ -854,7 +854,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
 }
  .input-box .input-custom:focus {
 	 outline: none;
-	 border: 2px solid #0E61BF;
+	 border: 1px solid #0E61BF !important;
 	 transition: 250ms;
 }
  .input-box.error .input-label {
@@ -881,8 +881,9 @@ ul.multi-checkbox li[class*="span"]:first-child {
 	 top: 2px;
 	 transition: 250ms;
 }
+.input-box .input-custom:focus ,
  .input-box.active .input-custom {
-	 border: 2px solid #0E61BF;
+	 border: 1px solid #0E61BF !important;
 }
 
  
