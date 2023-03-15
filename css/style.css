@@ -793,6 +793,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
 /* custom input textbox */
 input[type="text"] {
     -webkit-appearance: none;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08);
 }
  .input-custom{
 	 background: #fff;
