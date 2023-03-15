@@ -856,8 +856,8 @@ ul.multi-checkbox li[class*="span"]:first-child {
 
      /* box shadow for safari */
      -webkit-appearance: none;
-     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
-     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
+     -webkit-box-shadow: 0 0px 3px rgba(135, 135, 135, 0.5) !important;
+     box-shadow: 0 0px 3px rgba(135, 135, 135, 0.5) !important;
 }
  .input-box .input-custom:focus {
 	 outline: none;
@@ -866,7 +866,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
      /* box shadow for safari */
      -webkit-appearance: none;
      -webkit-box-shadow: 0 0px 5px rgba(14, 97, 191, 0.5) !important;
-     box-shadow: 0 0px 5px rgba(14, 97, 191, 0.5) !important;
+     box-shadow: 0 0px 3px rgba(14, 97, 191, 0.5) !important;
 }
 .input-box.error.focus .input-label
 {
@@ -913,8 +913,8 @@ ul.multi-checkbox li[class*="span"]:first-child {
 	 border: 1px solid #0E61BF !important;
     /* box shadow for safari */
      -webkit-appearance: none;
-     -webkit-box-shadow: 0 0px 5px rgba(56, 123, 201, 0.5) !important;
-     box-shadow: 0 0px 5px rgba(56, 123, 201, 0.5) !important;
+     -webkit-box-shadow: 0 0px 3px rgba(135, 135, 135, 0.5) !important;
+     box-shadow: 0 0px 3px rgba(135, 135, 135, 0.5) !important;
 }
 
  
