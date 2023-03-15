@@ -792,11 +792,6 @@ ul.multi-checkbox li[class*="span"]:first-child {
 
 /* custom input textbox */
 input[type="text"] {
-    /* margin: 1em; */
-
-    -webkit-box-shadow: 0px 0px 2px 1px green;
-    box-shadow: 0px 0px 2px 1px green;
-
     -webkit-appearance: none;
 }
  .input-custom{
@@ -860,12 +855,14 @@ input[type="text"] {
 	 border: 1px solid #dadce0 !important;
 	 padding: 13px 15px;
 	 transition: 250ms;
+     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08);
      box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08);
 }
  .input-box .input-custom:focus {
 	 outline: none;
 	 border: 1px solid rgb(14, 97, 191) !important;
 	 transition: 250ms;
+     -webkit-box-shadow: 0 0px 5px rgba(14, 97, 191, 0.5);
      box-shadow: 0 0px 5px rgba(14, 97, 191, 0.5);
 }
 .input-box.error.focus .input-label
@@ -911,6 +908,7 @@ input[type="text"] {
 .input-box .input-custom:focus ,
  .input-box.active .input-custom {
 	 border: 1px solid #0E61BF !important;
+     -webkit-box-shadow: 0 0px 5px rgba(56, 123, 201, 0.5) !important;
      box-shadow: 0 0px 5px rgba(56, 123, 201, 0.5) !important;
 }
 
