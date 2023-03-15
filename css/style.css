@@ -856,8 +856,8 @@ ul.multi-checkbox li[class*="span"]:first-child {
 
      /* box shadow for safari */
      -webkit-appearance: none;
-     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08) !important;
-     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08) !important;
+     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
+     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5) !important;
 }
  .input-box .input-custom:focus {
 	 outline: none;
