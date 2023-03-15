@@ -990,7 +990,9 @@ label.radio input:checked+.group-item .text-top {
 }
 
 /* custom input with label */
-
+form{
+    z-index: 9;
+}
 .form-group {
     position: relative;
     margin-bottom: 1.5rem;
