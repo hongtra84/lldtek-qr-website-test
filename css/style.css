@@ -832,7 +832,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
 	 white-space: nowrap;
 	 left: 5px;
 	 top: 7px;
-	 padding: 0 8px;
+	 padding: 0 5px;
 	 transition: 250ms;
 	 user-select: none;
 	 pointer-events: none;
@@ -888,6 +888,7 @@ ul.multi-checkbox li[class*="span"]:first-child {
 .input-box.error .input-custom:focus,
  .input-box.error .input-custom {
 	 border: 1px solid #f44336 !important;
+     left: 5px;
 }
 
  .input-box.focus .input-label, .input-box.active .input-label {
