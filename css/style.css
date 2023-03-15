@@ -872,13 +872,11 @@ ul.multi-checkbox li[class*="span"]:first-child {
 {
 	 color: #f44336;
 	 top: -18px;
-     left: 8px;
+     left: 5px;
 	 background: #fff;
 	 font-size: 11px;
 	 transition: 250ms;
 }
-
-
  .input-box.error .input-label {
 	 color: #f44336;
 	 top: -13px;
