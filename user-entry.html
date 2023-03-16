@@ -40,35 +40,21 @@
 
 					<form id="form" class="w-100 px-3">
 						<div class="padding-y-button">
-							<div class="input-box">
+							<div class="input-box"> <!-- active, error -->
 								<label class="input-label">User name</label>
 								<input type="text" class="input-custom" onfocus="setFocus(true)"
 									onblur="setFocus(false)" />
 							</div>
 						</div>
 						<div class="padding-y-button">
-							<div class="input-box">
+							<div class="input-box">  <!-- active, error -->
 								<label class="input-label">Phone</label>
 								<input type="text" class="input-custom" onfocus="setFocus(true)"
 									onblur="setFocus(false)" />
 							</div>
 						</div>
-						<div class="padding-y-button">
-							<div class="input-box"> <!-- active -->
-								<label class="input-label">Always active</label>
-								<input type="text" class="input-custom" onfocus="setFocus(true)"
-									onblur="setFocus(false)" />
-							</div>
-						</div>
-						<div class="padding-y-button">
-							<div class="input-box active-grey">
-								<label class="input-label">Always active-grey</label>
-								<input type="text" class="input-custom" onfocus="setFocus(true)"
-									onblur="setFocus(false)" />
-							</div>
-						</div>
-						<div class="padding-y-button">
-							<div class="input-box active-grey">
+						<!-- <div class="padding-y-button">
+							<div class="input-box active-grey"> 
 								<label class="input-label">Dropdown/select list</label>
 								<select class="input-custom" onfocus="setFocus(true)" onblur="setFocus(false)">
 									<option value="-1"></option>
@@ -77,13 +63,18 @@
 									<option value="3">Option 3</option>
 								</select>
 							</div>
-						</div>
-						<div class="padding-y-button">
-							<div class="input-box error">
-								<label class="input-label">Error input</label>
-								<input type="text" class="input-custom" onfocus="setFocus(true)" onblur="setFocus(false)" />
+						</div> -->
+						<button type="button" class="btn btn-add-to-order btn-big my-2 mx-0 w-100">
+							<div class="bg-inner">
+								<div class="content-btn">
+									<div class="d-flex flex-row group-item justify-content-center">
+										<span class="align-self-center text-center">
+											<a href="user-entry.html" class="text-white">SUBMIT</a>
+										</span>
+									</div>
+								</div>
 							</div>
-						</div>
+						</button>
 					</form>
 
 				</div>
