@@ -11,6 +11,10 @@
 .result{
     font-size: 24px;
     text-align: center;
+    color: #424242;
+}
+.result span{
+    color: #0062BD;
 }
 .height-checkin{
     height: calc(100vh - 100px);
