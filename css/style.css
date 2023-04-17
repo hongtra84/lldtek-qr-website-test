@@ -245,9 +245,9 @@ body.light .navbar-light {
 
 
 
-/* login */
-body.login{
-    background: url(../images/bg-login.png);
+/* welcome */
+body.welcome{
+    background: url(../images/bg-welcome.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -261,7 +261,7 @@ body.login{
     font-style: italic;
     font-size: 2.5vh !important;
 }
-.top-login{
+.top-welcome{
     /* height: calc(100vh - 65px); */
     /* background: #eee; */
     height: 100%;
@@ -295,16 +295,16 @@ body.login{
     text-transform: capitalize;
     font-size: 3.2vh !important;
 }
-#loginColumn.two-column.padding-top-header{
+#welcomeColumn.two-column.padding-top-header{
     padding-top: 5vh;
 }
-#loginColumn.one-column.padding-top-header{
+#welcomeColumn.one-column.padding-top-header{
     padding-top: 4vh;
 }
-/* #loginColumn.two-column .restaurant-info{
+/* #welcomeColumn.two-column .restaurant-info{
     padding-bottom: 3.5vh;
 }
-#loginColumn.one-column .restaurant-info{
+#welcomeColumn.one-column .restaurant-info{
     padding-bottom: 2vh;
 } */
 .light .address{
@@ -326,38 +326,38 @@ body.login{
     height: auto;
 }
 
-#loginColumn .group-button.two-column a{
+#welcomeColumn .group-button.two-column a{
     font-size: 14px;
     /* text-transform: capitalize; */
 }
-#loginColumn .group-button.two-column .btn-big .bg-inner .content-btn {
+#welcomeColumn .group-button.two-column .btn-big .bg-inner .content-btn {
     padding: 8px 15px 14px 15px;
 }
 
-#loginColumn.two-column .padding-y-button{
+#welcomeColumn.two-column .padding-y-button{
     padding: 1vh 0;
 }
-#loginColumn.one-column .padding-y-button{
+#welcomeColumn.one-column .padding-y-button{
     padding: 0.2vh 0;
 }
-#loginColumn .group-button.two-column a{
+#welcomeColumn .group-button.two-column a{
     font-size: 14px;
 }
-#loginColumn .group-button.one-column a{
+#welcomeColumn .group-button.one-column a{
     font-size: 16px;
 }
-#loginColumn .group-button.two-column .btn-big .bg-inner .content-btn {
+#welcomeColumn .group-button.two-column .btn-big .bg-inner .content-btn {
     padding: 8px 15px 14px 15px;
 }
-#loginColumn .group-button.one-column .btn-big .bg-inner .content-btn {
+#welcomeColumn .group-button.one-column .btn-big .bg-inner .content-btn {
     padding: 8px 20px 14px 20px;
 }
 
-#loginColumn .group-button.two-column{
+#welcomeColumn .group-button.two-column{
     padding: 2vh 0;
 }
 
-#loginColumn .group-button.one-column{
+#welcomeColumn .group-button.one-column{
     padding: 3vh 0;
 }
 
@@ -548,7 +548,7 @@ body.login{
     text-align: left;
     /* width: 12px; */
 }
-#loginColumn .btn-add-to-order .bg-inner .content-btn .text-empty {
+#welcomeColumn .btn-add-to-order .bg-inner .content-btn .text-empty {
     opacity: 0;
     width: 12px;
 }
@@ -1702,7 +1702,7 @@ input[type="checkbox"]:focus {
         max-width: 30%;
         /* flex: 0 0 auto !important; */
     }
-    #loginColumn .btn-add-to-order{
+    #welcomeColumn .btn-add-to-order{
         max-width: 100%;
     }
 
