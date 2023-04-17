@@ -46,7 +46,7 @@
                             return null;
                         }
                         return selectableFruits[index];
-                    }, { index: 0, selection_color: "orange", font: "Comic Sans MS,Verdana,Helvetica"}
+                    }, { index: 0, selection_color: "blue", font: "Comic Sans MS,Verdana,Helvetica"}
                 );
                 /* Example-3
                  * Select a color from the array 'selectableColors'.
@@ -192,18 +192,15 @@
 				border: solid black 1px;
 			}
 
+			.demo-sample canvas selection_color{
+				border: none;
+			}
+
 		</style>
 
 </head>
 
 <body onload="init()" style="overscroll-behavior: contain;">
-	<ul style="list-style-type: none;">
-		<li style="font-weight: bold;">Control by:</li>
-		<li>1. Hover and scroll with the mouse wheel or with the mousepad</li>
-		<li>2. Hover and use the arrow-up- or w- and arrow-down- or s-key</li>
-		<li>3. Click on the upper or lower half</li>
-		<li>4. On mobile use the scroll gesture</li>
-	</ul>
 	<div class="demo-sample">
 		<h1>Example-1</h1>
 		<h2>Number input 0-20</h2>
@@ -214,22 +211,6 @@
 		<h2>Width - Fruit selection<br>+ Colored highlight<br>+ Font (Comic Sans)</h2>
 		<canvas id="fruit-example" style="height: 150px;"></canvas>
 	</div>
-	<table class="demo-sample" style="width:calc(30% - 40px) !important; max-width: 250px; padding: 10px;">
-		<tr>
-			<th width="20%">Month</th>
-			<th width="20%">Day</th>
-			<th width="20%">Year(+20 Years)</th>
-			<th width="20%">Hours</th>
-			<th width="20%">Minutes</th>
-		</tr>
-		<tr>
-			<td><canvas id="date-time-month"></canvas></td>
-			<td><canvas id="date-time-day"></canvas></td>
-			<td><canvas id="date-time-year"></canvas></td>
-			<td><canvas id="date-time-hours"></canvas></td>
-			<td><canvas id="date-time-minutes"></canvas></td>
-		</tr>
-	</table>
 </body>
 <!-- Js -->
 <script src="./js/jquery.slim.min.js"></script>
