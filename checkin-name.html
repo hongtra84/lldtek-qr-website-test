@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="theme-color" content="black-translucent" />
+	<meta name="HandheldFriendly" content="true">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<link href="./css/font-awesome.css" type="text/css">
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<title>User Entry</title>
+</head>
+
+<body class="light welcome">
+	<nav class="navbar navbar-light sticky-top navbar-top ">
+		<div class="container-fluid container-md px-0">
+			<div class="d-flex justify-content-between align-self-center w-100">
+				<button class="btn disabled opacity-0" type="button">
+					<i class="fa-solid fa-arrow-left-long icon-white"></i>
+				</button>
+
+				<a class="navbar-brand title-bar text-light" href="#">Menu</a>
+				<div class="dropdown">
+
+					<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+						<i class="fa-solid fa-list-ul icon-white"></i>
+					</button>
+					<div class="dropdown-menu menu-right">
+						<a href="welcome.html" class="dropdown-item" type="button">welcome</a>
+						<a class="dropdown-item" type="button">Another action</a>
+						<a class="dropdown-item" type="button">Something else here ...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row justify-content-center h-100">
+			<div class="col-12 col-lg-6">
+
+				
+			</div>
+		</div>
+	</div>
+	<div class="powered-by">
+		<a href="https://www.spoton.com/" target="_blank"><img src="./images/powered-by-2.png" alt=""></a>
+	</div>
+
+
+
+
+
+
+	<!-- Js -->
+	<script src="./js/jquery.slim.min.js"></script>
+	<script src="./js/bootstrap.bundle.js"></script>
+
+	<script src="./js/font-awesome.js"></script>
+	<script src="./js/cart.js"></script>
+
+
+	<script>
+		// text-field focus
+		function setFocus(on) {
+			var element = document.activeElement;
+			if (on) {
+				setTimeout(function () {
+					element.parentNode.classList.add("focus");
+				});
+			} else {
+				let box = document.querySelector(".input-box");
+				box.classList.remove("focus");
+				$("input").each(function () {
+					var $input = $(this);
+					var $parent = $input.closest(".input-box");
+					if ($input.val()) $parent.addClass("focus");
+					else $parent.removeClass("focus");
+				});
+			}
+		}
+	</script>
+</body>
+
+</html>

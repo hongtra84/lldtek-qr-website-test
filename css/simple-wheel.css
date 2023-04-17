@@ -62,11 +62,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color:  rgba(0, 0, 0, 30%);
 }
 .simple-wheel li.selected{
   font-size: 48px;
   padding: 0.15em 0;
-  color: #3fa9f5;
+  color:  #000;
   font-weight: 500;
 }
 
